@@ -14,6 +14,13 @@ interface AddProductDrawerProps {
 }
 
 export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDrawerProps) {
+  useEffect(() => {
+    if (open) {
+      console.log("[AddProductDrawer] Drawer opened");
+    } else {
+      console.log("[AddProductDrawer] Drawer closed");
+    }
+  }, [open]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
@@ -33,15 +40,18 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log("[AddProductDrawer] Submit attempt", { name, price, category, labels, selectedFiles, imageUrl, isPublished, variants, descriptions });
     e.preventDefault();
-    setLoading(true);
+  setLoading(true);
     let imageUrls: string[] = [];
     if (selectedFiles.length > 0) {
+      console.log("[AddProductDrawer] Uploading selected files", selectedFiles.map(f => f.name));
       for (const file of selectedFiles) {
         const fileExt = file.name.split(".").pop();
         const fileName = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${fileExt}`;
         const { error } = await supabase.storage.from("storeadmin").upload(fileName, file, { upsert: false });
         if (error) {
+          console.error("[AddProductDrawer] Image upload failed", error);
           alert("Image upload failed");
           setLoading(false);
           return;
@@ -50,9 +60,13 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
         imageUrls.push(publicUrl);
       }
     } else if (imageUrl) {
+      console.log("[AddProductDrawer] Using imageUrl", imageUrl);
       imageUrls = [imageUrl];
     }
     await onAdd({
+      // Log just before calling onAdd
+      // (already logged above, but this is a checkpoint)
+      // console.log("[AddProductDrawer] onAdd called");
       name,
       price: Number(price),
       category,
@@ -74,30 +88,37 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   // Removed unused setDescription
     setVariants([]);
     setDescriptions([]);
-    onClose();
+  console.log("[AddProductDrawer] Drawer closing after submit");
+  onClose();
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("[AddProductDrawer] File input changed", e.target.files ? Array.from(e.target.files).map(f => f.name) : []);
     const files = Array.from(e.target.files || []);
     if (!files.length) return;
-    setSelectedFiles(files);
-    setImageUrl("");
-    if (fileInputRef.current) fileInputRef.current.value = "";
+  setSelectedFiles(files);
+  setImageUrl("");
+  if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const addVariant = () => {
+    console.log("[AddProductDrawer] Add Variant");
     setVariants([
       ...variants,
       { id: Date.now() * -1, name: '', ispublished: true, productvariantoptions: [] }
     ]);
   };
   const removeVariant = (idx: number) => {
+    console.log("[AddProductDrawer] Remove Variant", idx);
     setVariants(variants.filter((_, i) => i !== idx));
   };
   const updateVariant = (idx: number, key: keyof IVariant, value: any) => {
+    // Optionally log updates, but can be noisy
+    // console.log("[AddProductDrawer] Update Variant", { idx, key, value });
     setVariants(variants.map((v, i) => i === idx ? { ...v, [key]: value } : v));
   };
   const addOption = (vIdx: number) => {
+    console.log("[AddProductDrawer] Add Option to Variant", vIdx);
     setVariants(variants.map((v, i) => i === vIdx ? {
       ...v,
       productvariantoptions: [
@@ -107,24 +128,31 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
     } : v));
   };
   const removeOption = (vIdx: number, oIdx: number) => {
+    console.log("[AddProductDrawer] Remove Option", { vIdx, oIdx });
     setVariants(variants.map((v, i) => i === vIdx ? {
       ...v,
       productvariantoptions: v.productvariantoptions.filter((_, j) => j !== oIdx)
     } : v));
   };
   const updateOption = (vIdx: number, oIdx: number, key: keyof IOption, value: any) => {
+    // Optionally log updates, but can be noisy
+    // console.log("[AddProductDrawer] Update Option", { vIdx, oIdx, key, value });
     setVariants(variants.map((v, i) => i === vIdx ? {
       ...v,
       productvariantoptions: v.productvariantoptions.map((o, j) => j === oIdx ? { ...o, [key]: value } : o)
     } : v));
   };
   const addDescription = () => {
+    console.log("[AddProductDrawer] Add Description");
     setDescriptions([...descriptions, { id: undefined, title: '', content: '' }]);
   };
   const removeDescription = (idx: number) => {
+    console.log("[AddProductDrawer] Remove Description", idx);
     setDescriptions(descriptions.filter((_, i) => i !== idx));
   };
   const updateDescription = (idx: number, key: 'title' | 'content', value: string) => {
+    // Optionally log updates, but can be noisy
+    // console.log("[AddProductDrawer] Update Description", { idx, key, value });
     setDescriptions(descriptions.map((desc, i) => i === idx ? { ...desc, [key]: value } : desc));
   };
 
@@ -149,7 +177,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
         </div>
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto px-6 py-6">
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form id="product-add-form" onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-1">Product Name</label>
             <Input
