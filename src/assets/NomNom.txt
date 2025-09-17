@@ -1,0 +1,27 @@
+Nom Nom Project
+
+Born in kitchen, raised by flavor's, and emotionally damaged by under-seasoned food
+
+We don't just cook -- we plot, play, and sometimes even pray over pot.
+Every dish begins somewhere between a craving an a cultural flashback!
+Nom Nom is a glorified food diary - It's a living archive of edible drama. It's culture, history, tantrums, and a good butter-glistened bribe.
+
+
+
+
+Fix negative product issue in cart amount
+
+Non Authenticated users can order
+Pick up or delivery option
+Notes at checkout
+
+Estimated time of delivery
+Notification Messge
+Total orders left
+
+order drawer, order status update not working 
+orders count in products list not showing count correctly
+prodcts list, show variants in list/card and image
+mobile product card dont open edit drawer
+
+search filter in order, cutomers

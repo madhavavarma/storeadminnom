@@ -1,0 +1,365 @@
+[
+  {
+    "id": 1,
+    "name": "Phulka",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/phulka.png?updatedAt=1757081840181"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Soft wheat roti, freshly made on tawa."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Bread", "Indian", "Rotis"],
+    "price": 15,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Piece",
+            "price": 15,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ghee Phulka",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/gheephulka.jpg?updatedAt=1757081840041"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Soft wheat roti topped with pure ghee."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Bread", "Indian", "Rotis", "Veg"],
+    "price": 17,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Piece",
+            "price": 17,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chole",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/chole.jpg?updatedAt=1757081839961"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Spiced chickpea curry, North Indian style."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in protein and fiber."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Curry", "North Indian", "Veg"],
+    "price": 160,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Paneer Curry",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/paneercurry.webp?updatedAt=1757081840160"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Cottage cheese cubes cooked in rich Indian gravy."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Curry", "Veg"],
+    "price": 200,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 200,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mushroom Masala",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/mushroommasala.jpg?updatedAt=1757081839958"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Mushrooms cooked in spicy masala gravy."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Curry", "Veg"],
+    "price": 200,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 200,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Rajma",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/rajma.jpg?updatedAt=1757081840044"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Red kidney beans cooked in thick tomato gravy."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Curry", "North Indian", "Veg"],
+    "price": 160,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mix Veg Dry",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/mixvegdry.webp?updatedAt=1757081840207"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Seasonal vegetables stir-fried with spices."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Dry", "Veg"],
+    "price": 175,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 175,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Baby Corn Manchurian Dry",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/babycornmanchuriandry.jpg?updatedAt=1757081840149"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Crispy baby corn tossed in Indo-Chinese Manchurian sauce."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Starters", "Indo-Chinese"],
+    "price": 185,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Plate",
+            "price": 185,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Chicken Curry",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/chickencurryfullplace.jpg?updatedAt=1757081839835"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Delicious chicken curry cooked with spices."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Curry", "Non-Veg"],
+    "price": 260,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "Full Plate",
+            "price": 260,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "Half Plate",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Fish Curry (Rohu, 1 pc)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/TastyTrails/products/fishcurryrohu.jpg?updatedAt=1757081840041"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Traditional fish curry with Rohu (1 piece)."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Curry", "Fish", "Non-Veg"],
+    "price": 140,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Serving",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Pc",
+            "price": 140,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  }
+]

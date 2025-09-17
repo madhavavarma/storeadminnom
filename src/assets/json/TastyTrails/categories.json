@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Rotis",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/TastyTrails/categories/rotis.jpg?updatedAt=1757081223793",
+    "is_published": true
+  },
+  {
+    "id": 2,
+    "name": "Vegetarian Curries",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/TastyTrails/categories/vegetariancurries.jpg?updatedAt=1757081224016",
+    "is_published": true
+  },
+  {
+    "id": 3,
+    "name": "Starters",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/TastyTrails/categories/starters.jpg?updatedAt=1757081223833",
+    "is_published": true
+  },
+  {
+    "id": 4,
+    "name": "Non-Veg Curries",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/TastyTrails/categories/nonvegcurries.jpg?updatedAt=1757081223830",
+    "is_published": true
+  }
+]

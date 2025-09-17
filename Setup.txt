@@ -1,0 +1,7 @@
+Create a supabase DB
+Run Scripts in Supabase DB from Scripts2.sql
+Create a bucket in storage with name storeadmin and make it public.
+Copy Supabase keys to this project in SupabaseClient.ts
+
+Add a Category in Store Admin App
+@

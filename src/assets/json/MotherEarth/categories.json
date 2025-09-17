@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ayurveda Medicines",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/AyurvedaMedicines.jpg",
+    "is_published": true
+  },
+  {
+    "id": 2,
+    "name": "Hair & Skin Care",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/HairSkinCare.jpg",
+    "is_published": true
+  },
+  {
+    "id": 3,
+    "name": "Wellness & Immunity",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/WellnessImmunity.jpg",
+    "is_published": true
+  },
+  {
+    "id": 4,
+    "name": "Bath & Body",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/BathBody.jpg",
+    "is_published": true
+  },
+  {
+    "id": 5,
+    "name": "Natural Lifestyle",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/NaturalLifestyle.jpg",
+    "is_published": true
+  },
+  {
+    "id": 6,
+    "name": "Roof Garden",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/RoofGarden.jpg",
+    "is_published": true
+  }
+]

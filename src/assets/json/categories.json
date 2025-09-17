@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Vegetables",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/Vegetables.jpg?updatedAt=1756444061851",
+    "is_published": true
+  },
+  {
+    "id": 2,
+    "name": "Fruits",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/Fruits.jpg?updatedAt=1756444261894",
+    "is_published": true
+  },
+  {
+    "id": 3,
+    "name": "Dairy",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/Dairy.avif?updatedAt=1756444565618",
+    "is_published": true
+  },
+  {
+    "id": 4,
+    "name": "Groceries",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/Groceries.jpg?updatedAt=1756444566417",
+    "is_published": true
+  },
+  {
+    "id": 5,
+    "name": "Others",
+    "image_url": "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Categories/Others.webp?updatedAt=1756444567309",
+    "is_published": true
+  }
+]

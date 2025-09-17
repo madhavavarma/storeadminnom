@@ -1,0 +1,2523 @@
+[
+  {
+    "id": 1,
+    "name": "Onions (ఉల్లిపాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Onion.jpg?updatedAt=1756446479677"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Large, pungent onions commonly used in Indian and global cuisine."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in antioxidants and vitamin C; helps boost immunity."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Bulb",
+  "White",
+  "New"
+    ],
+    "price": 32,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 50,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 25,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "1/4 kg",
+            "price": 13,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Size",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "L",
+            "price": 50,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "M",
+            "price": 25,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "S",
+            "price": 13,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Green Chilli (పచ్చి మిరపకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Green%20Chillie.webp?updatedAt=1756445116854"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Spicy green chillies used to add heat and flavor to dishes."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Contains capsaicin which boosts metabolism and reduces inflammation."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Spicy",
+      "Green"
+    ],
+    "price": 45,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/4 kg",
+            "price": 8,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 16,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "1 kg",
+            "price": 45,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 4,
+            "name": "5 kg",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Beetroot (బీట్‌రూట్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Beetroot.avif?updatedAt=1756445117020"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Deep red beetroots rich in antioxidants and great for salads and juices."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of folate, fiber and helps in blood pressure regulation."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Root",
+  "Red",
+  "New"
+    ],
+    "price": 30,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 30,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 16,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "1/4 kg",
+            "price": 8,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Potato (బంగాళాదుంప)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Potato.jpg?updatedAt=1756445117100"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Versatile potatoes widely used in cooking for fries, curries, and more."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in potassium and vitamin C."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Root",
+  "Brown",
+  "New"
+    ],
+    "price": 29,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 15,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1 kg",
+            "price": 29,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Raw Banana (అరటికాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Raw%20Banana.jpg?updatedAt=1756543665087"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Unripe bananas used for cooking in many Indian dishes."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of resistant starch, helps digestion and blood sugar control."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Fruit Vegetable",
+      "Green"
+    ],
+    "price": 10,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 5,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1 Kg",
+            "price": 10,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Amaranth Leaves (తోటకూర)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Amaranth.webp?updatedAt=1756446470824"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Locally grown amaranth leaves, commonly used in South Indian cooking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in protein, iron, and vitamin C. Supports digestion and muscle strength."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Leafy",
+  "Greens",
+  "Red-Green",
+  "New"
+    ],
+    "price": 14,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bundle",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 No",
+              "price": 5,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Amla (ఉసిరికాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/amla.webp?updatedAt=1756446470760"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Amla or Indian gooseberry is rich in vitamin C and antioxidants."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Boosts immunity, promotes healthy skin and hair."
+      }
+    ],
+    "ispublished": true,
+    "category": "Fruits",
+    "labels": [
+      "Fruit",
+      "Green",
+      "Health"
+    ],
+    "price": 80,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Kg",
+            "price": 80,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+            ,{
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 40,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Ash gourd (బూడిద గుమ్మడికాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Ash%20Gourd.jpg?updatedAt=1756446470643"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Large gourd commonly used in soups and stews."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low calorie and high in fiber; helps in digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Gourd",
+      "White"
+    ],
+    "price": 20,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Kg",
+            "price": 20,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+            ,{
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 10,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Baby Corn (బేబీ మొక్కజొన్న)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Baby%20Corn.jpg?updatedAt=1756446470776"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Small, tender ears of corn harvested early for salads and stir-fries."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low in calories and high in fiber and antioxidants."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Corn",
+  "Yellow",
+  "New"
+    ],
+    "price": 46,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Kg",
+            "price": 46,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+            ,{
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 23,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Banana Flower (అరటి పువ్వు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Banana%20Flower.jpg?updatedAt=1756446470623"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Edible banana flower used in Indian cooking, especially in curries and stir-fries."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamins and minerals; aids digestion and lactation."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Flower",
+      "Purple"
+    ],
+    "price": 14,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+                    {
+            "id": 1,
+            "name": "1 kg",
+            "price": 14,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 7,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Capsicum (బెల్ పెప్పర్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Capsicum.jpg?updatedAt=1756446470717"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Colorful bell peppers with sweet flavor used in salads and cooking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in vitamin C and antioxidants."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Bell Pepper",
+      "Green"
+    ],
+    "price": 50,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 50,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 25,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 13,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Bitter Gourd (కాకరకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Bitter%20Gourd.avif?updatedAt=1756446470879"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Green bitter gourds used in cooking for their unique taste and health benefits."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Helps regulate blood sugar and supports digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Gourd",
+      "Greens",
+      "Bitter"
+    ],
+    "price": 38,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 38,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 19,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 10,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bottle Gourd (సొరకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Bottle%20Gourd.jpg?updatedAt=1756541342108"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Long green bottle gourds commonly used in Indian curries and soups."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low calorie, good for hydration and digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Gourd",
+      "Green"
+    ],
+    "price": 34,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 34,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 17,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 9,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Butter Beans (వెన్న పప్పు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Butter%20Beans.avif?updatedAt=1756446470800"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Creamy butter beans used in stews and salads."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in protein and fiber."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Beans",
+      "White"
+    ],
+    "price": 49,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 49,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 25,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 13,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Broad Beans (చిక్కుడు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Board%20Beans.avif?updatedAt=1756446470782"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Broad beans also known as fava beans, nutritious and filling."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of protein and iron."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Beans",
+      "Green"
+    ],
+    "price": 42,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 42,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 21,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 11,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Cabbage (క్యాబేజీ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Cabbage.avif?updatedAt=1756446470763"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh green cabbage, crunchy and healthy."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamins K and C, good for digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green"
+    ],
+    "price": 30,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 30,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 15,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 8,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Carrot (కారెట్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Carrot.avif?updatedAt=1756446474927"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh orange carrots, crunchy and sweet."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in beta-carotene and good for eyesight."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Root",
+  "Orange",
+  "New"
+    ],
+    "price": 39,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 50,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 25,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 13,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Cauliflower (కాలీఫ్లవర్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Cauliflower.avif?updatedAt=1756446475102"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh cauliflower, white and firm."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in fiber and vitamins, supports digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Cruciferous",
+      "White"
+    ],
+    "price": 27,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 27,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 14,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 7,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Cluster beans (గోరుచిక్కుడు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Cluster%20beans.avif?updatedAt=1756446474951"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Tender cluster beans, rich in nutrients."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of dietary fiber and vitamins."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Beans",
+      "Green"
+    ],
+    "price": 44,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 44,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 22,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            },
+            {
+              "id": 3,
+              "name": "1/4 kg",
+              "price": 11,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Coconut (కొబ్బరి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Coconut.jpg?updatedAt=1756446474990"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh coconuts with husk, perfect for cooking and drinking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in healthy fats and electrolytes."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Nut",
+      "Brown"
+    ],
+    "price": 65,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/4 kg",
+            "price": 8,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 16,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 32,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "5 kg",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Colocasia Leaves (చమదుంప ఆకులు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Colocasia%20Leaves.avif?updatedAt=1756446475337"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh colocasia leaves, commonly used in cooking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of vitamins and antioxidants."
+      }
+    ],
+    "ispublished": false,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green"
+    ],
+    "price": 12,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 No",
+            "price": 12,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Colocasia (చమదుంప)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Colocasia%20Leaves.avif?updatedAt=1756446475337"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh colocasia root, starchy and nutritious."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in fiber and vitamins."
+      }
+    ],
+    "ispublished": false,
+    "category": "1",
+    "labels": [
+      "Root",
+      "Brown"
+    ],
+    "price": 28,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Kg",
+            "price": 65,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Coriander Leaves (కొత్తిమీర)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Coriander%20Leaves.jpg?updatedAt=1756446475056"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh coriander leaves, aromatic and flavorful."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in antioxidants and aids digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green"
+    ],
+    "price": 15,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 No",
+            "price": 15,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Corn (మొక్కజొన్న)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Corn.jpg?updatedAt=1756446475303"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh corn on the cob, sweet and juicy."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in fiber and antioxidants."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Grain",
+  "Yellow",
+  "New"
+    ],
+    "price": 34,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Pc",
+            "price": 0,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Cucumber (కీర దోసకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Cucumber.webp?updatedAt=1756446475861"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh cucumbers, crisp and hydrating."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low calorie, high water content for hydration."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Hydrating",
+      "Green"
+    ],
+    "price": 30,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Pc",
+            "price": 0,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Ladies Finger (బెండకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Ladies%20Finger.jpg?updatedAt=1756446475253"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh ladies finger (okra), tender and crisp."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in fiber and vitamin C, aids digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Green"
+    ],
+    "price": 35,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 35,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 18,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Pumpkin (గుమ్మడికాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Pumpkin.jpg?updatedAt=1756446479728"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh pumpkin, sweet and rich in nutrients."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamins A and C, good for eye health."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Orange"
+    ],
+    "price": 23,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 23,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 12,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Radish (ముల్లంగి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Radish.avif?updatedAt=1756541424015"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh radish, crunchy with a slightly spicy flavor."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of antioxidants and fiber."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Root",
+      "White"
+    ],
+    "price": 31,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 31,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 16,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Ridge Gourd (బీరకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Ridge%20Gourd.jpg?updatedAt=1756446479847"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh ridge gourd, soft and flavorful."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low calorie and high in dietary fiber."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Green"
+    ],
+    "price": 38,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+            {
+              "id": 1,
+              "name": "1 kg",
+              "price": 38,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": true
+            },
+            {
+              "id": 2,
+              "name": "1/2 kg",
+              "price": 19,
+              "ispublished": true,
+              "isoutofstock": false,
+              "isdefault": false
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Shallot (Pearl Onion) (ఉల్లి గడ్డలు)",
+    "imageUrls": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Shallots.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Small, sweet pearl onions, great for cooking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Contains antioxidants and vitamins."
+      }
+    ],
+    "ispublished": false,
+    "category": "1",
+    "labels": [
+      "Onion",
+      "Purple"
+    ],
+    "price": 38,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 Kg",
+            "price": 38,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Snake Gourd (పొట్లకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Snake%20Gourd.jpg?updatedAt=1756446480031"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh snake gourd, long and slender."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low in calories and rich in fiber."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Green"
+    ],
+    "price": 40,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 40,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 20,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Sorrel Leaves (గోంగూర)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Sorrel%20Leaves.avif?updatedAt=1756446480354"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh sorrel leaves, tangy and flavorful."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamin C and antioxidants."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green"
+    ],
+    "price": 15,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 No",
+            "price": 15,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Spinach (పాలకూర)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Spinach.webp?updatedAt=1756446480583"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh spinach leaves, nutritious and tender."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in iron and vitamins A, C, and K."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green"
+    ],
+    "price": 15,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 No",
+            "price": 15,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Sweet Potato (చిలకడదుంప)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Sweet%20Potato.webp?updatedAt=1756446480280"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Sweet potatoes, rich and creamy texture."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "High in fiber and beta-carotene."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Root",
+      "Orange"
+    ],
+    "price": 58,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 12,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1 Kg",
+            "price": 23,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Curry Leaves (కరివేపాకు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Curry%20Leaves.avif?updatedAt=1756540791865"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh curry leaves, aromatic and essential for South Indian cooking."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in antioxidants and supports digestion."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Leafy",
+      "Greens",
+      "Green",
+      "Aromatic"
+    ],
+    "price": 10,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/4 kg",
+            "price": 8,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "1/2 kg",
+            "price": 16,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 32,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 1,
+            "name": "5 kg",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Tomato (టమోటా)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Tomato.jpg?updatedAt=1756445116948"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh, juicy tomatoes perfect for salads, curries, and sauces."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamin C, potassium, and antioxidants. Supports heart health."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+  "Fruit Vegetable",
+  "Red",
+  "New"
+    ],
+    "price": 46,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1/4 kg",
+            "price": 5,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 23,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "1 kg",
+            "price": 46,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Ivy Gourd (దొండకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Ivy%20Gourd.jpg?updatedAt=1756540791755"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Small, crisp ivy gourds (tindora), commonly used in Indian curries and stir-fries."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Low in calories, good source of dietary fiber and vitamins."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Gourd",
+      "Green"
+    ],
+    "price": 36,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 36,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 18,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Brinjal (వంకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Brinjal.jpg?updatedAt=1756540791766"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Fresh brinjal / eggplant used in many curries and stir-fries."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Good source of fiber and antioxidants."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": [
+      "Gourd",
+      "Purple"
+    ],
+    "price": 40,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Weight",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "1 kg",
+            "price": 40,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1/2 kg",
+            "price": 20,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Elephant Yam (Elephant Yam)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Elephant%20Yam.webp?updatedAt=1756548205986"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Starchy elephant yam, used in curries and deep-fried preparations." },
+      { "id": 2, "title": "Benefits", "content": "Good source of fiber and complex carbohydrates." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Root", "Brown"],
+    "price": 60,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 kg", "price": 60, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 30, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Fenugreek Leaves (Methi)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Fenugreek%20Leaves.jpg?updatedAt=1756548205949"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh fenugreek (methi) leaves, aromatic and slightly bitter." },
+      { "id": 2, "title": "Benefits", "content": "Rich in fiber and helps with digestion and blood sugar control." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Leafy", "Green"],
+    "price": 18,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 No", "price": 18, "ispublished": true, "isoutofstock": false, "isdefault": true } ] }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "French Beans (ఫ్రెంచ్ బీన్స్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/French%20Beans.jpg?updatedAt=1756548206092"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Tender French beans, good for stir-fries and curries." },
+      { "id": 2, "title": "Benefits", "content": "High in fiber and vitamins." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Beans", "Green"],
+    "price": 55,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 kg", "price": 55, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 28, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Garlic (వెల్లులి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Garlic.jpg?updatedAt=1756548205938"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh garlic bulbs used as a base flavor in many cuisines." },
+      { "id": 2, "title": "Benefits", "content": "Contains allicin which supports immunity and heart health." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Aromatic", "Bulb"],
+    "price": 180,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1/4 kg", "price": 45, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 90, "ispublished": true, "isoutofstock": false, "isdefault": false }, { "id": 3, "name": "1 kg", "price": 180, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 47,
+  "name": "Ginger (అల్లం)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Ginger.jpg?updatedAt=1756548206029"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh ginger root, used for flavor and health tonics." },
+      { "id": 2, "title": "Benefits", "content": "Aids digestion and has anti-inflammatory properties." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Aromatic", "Root"],
+    "price": 120,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1/4 kg", "price": 30, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 60, "ispublished": true, "isoutofstock": false, "isdefault": false }, { "id": 3, "name": "1 kg", "price": 120, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 48,
+  "name": "Green Peas (pachi buttani)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Green%20Peas.avif?updatedAt=1756548671039"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh green peas, sweet and tender." },
+      { "id": 2, "title": "Benefits", "content": "High in protein and fiber; great in pulao and curries." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Legume", "Green"],
+    "price": 80,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 kg", "price": 80, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 40, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Lemon (నిమ్మ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Lemon.jpg?updatedAt=1756548670816"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh lemons/limes used for juices and garnishes." },
+      { "id": 2, "title": "Benefits", "content": "High in vitamin C and aids digestion." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Citrus", "Yellow"],
+    "price": 6,
+    "productvariants": [
+      { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Pc", "price": 6, "ispublished": true, "isoutofstock": false, "isdefault": true } ] }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Mango Raw (మామిడికాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Mango%20Raw.avif?updatedAt=1756548205913"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Raw mango used for pickles and tangy curries." },
+      { "id": 2, "title": "Benefits", "content": "Rich in vitamin C and used in seasonal dishes." }
+    ],
+    "ispublished": true,
+    "category": "Fruits",
+    "labels": ["Fruit", "Green"],
+    "price": 90,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 90, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 45, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Mint Leaves (పుదినా)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Mint%20Leaves.jpg?updatedAt=1756548205942"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh mint leaves, aromatic and cooling." },
+      { "id": 2, "title": "Benefits", "content": "Good for digestion and used as garnish and in chutneys." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Leafy", "Green"],
+    "price": 15,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 No", "price": 15, "ispublished": true, "isoutofstock": false, "isdefault": true } ] }
+    ]
+  },
+  {
+    "id": 52,
+  "name": "Mushroom (మష్రూమ్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Vegetables/Mushroom.jpg?updatedAt=1756548206140"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh mushrooms suitable for stir-fries and gravies." },
+      { "id": 2, "title": "Benefits", "content": "Low calorie and good source of B vitamins and protein." }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Fungus", "White"],
+    "price": 150,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 kg", "price": 150, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 75, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Mango (మామిడి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Mango.jpg?updatedAt=1756566157940"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Ripe mangoes, sweet and juicy." }, { "id": 2, "title": "Benefits", "content": "High in vitamin A and C; seasonal fruit." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Yellow"],
+    "price": 120,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 120, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 60, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 54,
+  "name": "Papaya (బొప్పాయి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Papaya.avif?updatedAt=1756566162517"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet papayas, ideal for breakfasts and smoothies." }, { "id": 2, "title": "Benefits", "content": "Rich in vitamin C and digestive enzymes." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Orange"],
+    "price": 50,
+    "productvariants": [ { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Pc", "price": 50, "ispublished": true, "isoutofstock": false, "isdefault": true } ] } ]
+  },
+  {
+    "id": 55,
+    "name": "Banana (పండ్ల అరటి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Banana.jpg?updatedAt=1756566157945"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Ripe bananas, sweet and energy-rich." }, { "id": 2, "title": "Benefits", "content": "Good source of potassium and quick energy." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Yellow"],
+    "price": 60,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 60, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 30, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 56,
+    "name": "Coconut (కొబ్బరి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Coconut.avif?updatedAt=1756566158038"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Fresh coconuts for cooking and drinking." }, { "id": 2, "title": "Benefits", "content": "Rich in healthy fats and electrolytes." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Brown"],
+    "price": 65,
+    "productvariants": [ { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Pc", "price": 65, "ispublished": true, "isoutofstock": false, "isdefault": true } ] } ]
+  },
+  {
+    "id": 57,
+    "name": "Pineapple (అనాసపండు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Pineapple.jpg?updatedAt=1756566162361"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet pineapples, great for juices and fruit salads." }, { "id": 2, "title": "Benefits", "content": "Contains bromelain and vitamin C." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Tropical"],
+    "price": 90,
+    "productvariants": [ { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Pc", "price": 90, "ispublished": true, "isoutofstock": false, "isdefault": true } ] } ]
+  },
+  {
+    "id": 58,
+    "name": "Guava (జామ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Guava.avif?updatedAt=1756566158020"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Fresh guavas, crunchy and sweet." }, { "id": 2, "title": "Benefits", "content": "High in vitamin C and fiber." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Green"],
+    "price": 70,
+    "productvariants": [ { "id": 1, "name": "1 Kg", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 70, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 35, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 59,
+  "name": "Orange (నారింజ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Orange.avif?updatedAt=1756566161845"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Juicy oranges, perfect for juices." }, { "id": 2, "title": "Benefits", "content": "High in vitamin C and hydration." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Citrus"],
+    "price": 80,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 80, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 40, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 60,
+  "name": "Jackfruit (పనస పండు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Jackfruit.jpg?updatedAt=1756566157950"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Large jackfruits, used ripe or unripe in several dishes." }, { "id": 2, "title": "Benefits", "content": "Rich in fiber and vitamin C." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Large"],
+    "price": 25,
+    "productvariants": [ { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 25, "ispublished": true, "isoutofstock": false, "isdefault": true } ] } ]
+  },
+  {
+    "id": 61,
+  "name": "Apple (ఆపిల్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Apple.avif?updatedAt=1756566157772"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Fresh apples, crisp and sweet." }, { "id": 2, "title": "Benefits", "content": "Good source of fiber and antioxidants." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Red"],
+    "price": 160,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 160, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 80, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 62,
+  "name": "Pear (పియర్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Pear.avif?updatedAt=1756566162619"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Juicy pears, great for snacks." }, { "id": 2, "title": "Benefits", "content": "High in fiber and vitamins." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Green"],
+    "price": 140,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 140, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 70, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 63,
+    "name": "Watermelon (పుచకాయ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Watermelon.webp?updatedAt=1756566162584"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet watermelons, hydrating and refreshing." }, { "id": 2, "title": "Benefits", "content": "High water content and vitamin C." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Large"],
+    "price": 25,
+    "productvariants": [ { "id": 1, "name": "Piece", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Pc", "price": 25, "ispublished": true, "isoutofstock": false, "isdefault": true } ] } ]
+  },
+  {
+    "id": 64,
+    "name": "Lychee (లిచీ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Lychee.jpg?updatedAt=1756566157858"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet lychees, seasonal and juicy." }, { "id": 2, "title": "Benefits", "content": "High in vitamin C and antioxidants." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Red"],
+    "price": 180,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 180, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 90, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 65,
+    "name": "Grapes (ద్రాక్ష)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Grapes.webp?updatedAt=1756566158000"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Fresh grapes, sweet and small." }, { "id": 2, "title": "Benefits", "content": "Good source of antioxidants and quick energy." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Purple"],
+    "price": 160,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 160, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 80, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 66,
+  "name": "Chikoo (సపోటా)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Chikoo.webp?updatedAt=1756566158040"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet chikoo fruit, commonly eaten fresh." }, { "id": 2, "title": "Benefits", "content": "Good source of dietary fiber and natural sugars." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Brown"],
+    "price": 140,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 140, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 70, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 67,
+    "name": "Custard Apple (సీతాఫలం)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Fruits/Custard%20Apple.avif?updatedAt=1756566157908"
+    ],
+    "productdescriptions": [ { "id": 1, "title": "Description", "content": "Sweet custard apples, creamy texture." }, { "id": 2, "title": "Benefits", "content": "Rich in vitamins and minerals." } ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Fruit", "Green"],
+    "price": 160,
+    "productvariants": [ { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 Kg", "price": 160, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "1/2 kg", "price": 80, "ispublished": true, "isoutofstock": false, "isdefault": false } ] } ]
+  },
+  {
+    "id": 68,
+    "name": "Milk - Full Cream (పాలు) 1 L",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Dairy/Milk.avif?updatedAt=1756816282605"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Full cream fresh milk, rich and creamy — suitable for drinking and cooking." },
+      { "id": 2, "title": "Benefits", "content": "Good source of calcium and protein; supports bone health." }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Dairy", "Liquid"],
+    "price": 60,
+    "productvariants": [
+      { "id": 1, "name": "Volume", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "1 L", "price": 60, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "500 ml", "price": 35, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Curd / Yogurt (పెరుగు) 500 g",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Dairy/Curd.jpg?updatedAt=1756816282638"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh homemade-style curd, great as a side, in raitas, or for cooking." },
+      { "id": 2, "title": "Benefits", "content": "Probiotic-rich and good for digestion." }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Dairy", "Probiotic"],
+    "price": 50,
+    "productvariants": [
+      { "id": 1, "name": "Pack", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "200 g", "price": 25, "ispublished": true, "isoutofstock": false, "isdefault": false }, { "id": 2, "name": "500 g", "price": 50, "ispublished": true, "isoutofstock": false, "isdefault": true } ] }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Paneer (పనీర్) 200 g",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Dairy/Paneer.jpg?updatedAt=1756816282485"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Fresh cottage cheese (paneer), soft and mild — used in many Indian dishes." },
+      { "id": 2, "title": "Benefits", "content": "High in protein and calcium; versatile for cooking." }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Dairy", "Protein"],
+    "price": 120,
+    "productvariants": [
+      { "id": 1, "name": "Weight", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "200 g", "price": 120, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "500 g", "price": 300, "ispublished": true, "isoutofstock": false, "isdefault": false }, { "id": 3, "name": "1 Kg", "price": 580, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Butter (వెన్న) 200 g",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Dairy/Butter.jpg?updatedAt=1756816282490"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Salted butter, creamy and perfect for cooking and spreading." },
+      { "id": 2, "title": "Benefits", "content": "Provides energy and fat-soluble vitamins." }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Dairy", "Spreads"],
+    "price": 220,
+    "productvariants": [
+      { "id": 1, "name": "Pack", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "100 g", "price": 120, "ispublished": true, "isoutofstock": false, "isdefault": false }, { "id": 2, "name": "200 g", "price": 220, "ispublished": true, "isoutofstock": false, "isdefault": true } ] }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Cheese Slices (చీజ్ స్లైస్) 200 g",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/StoreUI%20Images/Dairy/Cheese%20Slice.png?updatedAt=1756816282734"
+    ],
+    "productdescriptions": [
+      { "id": 1, "title": "Description", "content": "Processed cheese slices, handy for sandwiches and burgers." },
+      { "id": 2, "title": "Benefits", "content": "Good source of calcium and convenient for quick meals." }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Dairy", "Processed"],
+    "price": 180,
+    "productvariants": [
+      { "id": 1, "name": "Pack", "ispublished": true, "productvariantoptions": [ { "id": 1, "name": "200 g", "price": 180, "ispublished": true, "isoutofstock": false, "isdefault": true }, { "id": 2, "name": "400 g", "price": 340, "ispublished": true, "isoutofstock": false, "isdefault": false } ] }
+    ]
+  }
+]
+ 

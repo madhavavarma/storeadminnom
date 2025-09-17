@@ -1,0 +1,1503 @@
+[
+  {
+    "id": 1,
+    "name": "Sukheebhava (సుఖీభవ)",
+    "imageUrls": [
+      "https://motherearthorganics.co.in/wp-content/uploads/2025/01/19-150x150.png"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Ayurvedic medicine for cold, cough and immunity support."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Helps relieve cough, strengthens lungs, and boosts resistance against seasonal infections."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Cold", "Cough", "Immunity"],
+    "price": 120,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack Size",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 280,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Raksha (రక్ష)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Raksha.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal remedy for skin allergies and irritations."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Reduces itching, rashes, and nourishes skin."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Skin", "Allergy"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack Size",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "50 g",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sakarya (సకార్య)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Sakarya.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural medicine for gastric issues and constipation relief."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Improves digestion, relieves bloating, and helps regulate bowel movements."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Digestion", "Constipation"],
+    "price": 90,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 ml",
+            "price": 90,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Triphala (త్రిఫల)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Triphala.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Classical Ayurvedic formula made with three fruits for overall digestive health."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Supports detoxification, relieves constipation, improves gut health."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Digestion", "Detox"],
+    "price": 130,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 130,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 300,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Nil Stone (నిల్ స్టోన్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/NilStone.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal formulation for kidney and bladder stone problems."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Helps dissolve stones, relieves urinary pain and discomfort."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Kidney", "Bladder", "Stones"],
+    "price": 180,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "60 Tablets",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tooth Powder & Herbodent (పళ్ల పొడి, హెర్బోడెంట్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/ToothPowder.jpg",
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Herbodent.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural herbal tooth powder and toothpaste for teeth and gum problems."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Strengthens gums, prevents cavities, freshens breath and maintains oral hygiene."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Teeth", "Gums", "Oral Care"],
+    "price": 80,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Type",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "Tooth Powder 50 g",
+            "price": 80,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "Herbodent 100 g",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lemon Grass Oil (Mosquit) (నిమ్మ గడ్డి నూనె)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/LemongrassOil.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural mosquito repellent oil made from lemongrass."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Repels mosquitoes, provides freshness, can be used in diffusers or directly applied with carrier oil."
+      }
+    ],
+    "ispublished": true,
+    "category": "5",
+    "labels": ["Mosquito", "Repellent"],
+    "price": 100,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "50 ml",
+            "price": 100,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "100 ml",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Kesaraksha Hair Oil & Shampoo (కేశరక్ష ఆయిల్, గ్రీన్ షాంపూ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/KesarakshaOil.jpg",
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/KesarakshaShampoo.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal hair oil and shampoo for hair fall, dandruff and lice problems."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Strengthens roots, prevents dandruff, reduces hair fall, and keeps scalp healthy."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Hair Oil", "Shampoo", "Anti-dandruff"],
+    "price": 220,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Type",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "Hair Oil 100 ml",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "Shampoo 100 ml",
+            "price": 100,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Himagiri Multipurpose Hair Oil (హిమగిరి హెయిర్ ఆయిల్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/HimagiriOil.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Multipurpose Ayurvedic hair oil for stress, pain relief and hair strengthening."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Reduces headache, stress, body pain and improves hair health."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Hair Oil", "Stress Relief"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 ml",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Amrutha (అమృత)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Amrutha.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Traditional Ayurvedic tonic for general wellness and immunity."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Boosts energy, strengthens immunity, and promotes overall health."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Immunity", "Wellness"],
+    "price": 180,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "200 ml",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Tanvet Cough Syrup (టాన్వెట్ దగ్గు మందు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/TanvetCoughSyrup.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal cough syrup for relief from cough, phlegm and throat irritation."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Soothes throat, reduces cough and helps clear phlegm naturally."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Cough", "Phlegm", "Throat"],
+    "price": 90,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 ml",
+            "price": 90,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Ginger Candy (అల్లం మిఠాయి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/GingerCandy.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural ginger-based candy for digestion and cough relief."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Aids digestion, reduces nausea, and soothes throat irritation."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Digestion", "Cough", "Candy"],
+    "price": 60,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 60,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 140,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Black Henna (బ్లాక్ హెన్నా)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/BlackHenna.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal hair coloring powder for natural black hair."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Colors hair naturally, strengthens roots and prevents dandruff."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Hair", "Black Color", "Henna"],
+    "price": 90,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 90,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Bhavana Jeera & Bhavana Allam (భావన జీలకర్ర, భావన అల్లం)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/BhavanaJeera.jpg",
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/BhavanaAllam.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Ayurvedic powders for digestion, acidity and gastric relief."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Relieves indigestion, acidity and improves appetite naturally."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Digestion", "Gastric"],
+    "price": 70,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Type",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "Bhavana Jeera 50 g",
+            "price": 70,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "Bhavana Allam 50 g",
+            "price": 70,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Nava Jeevan (నవ జీవన్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/NavaJeevan.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal formulation for vitality, gastric problems and sexual wellness."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Improves digestion, boosts energy, and supports reproductive health."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Wellness", "Gastric", "Sex Health"],
+    "price": 250,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "200 ml",
+            "price": 250,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Suraksha (సురక్ష)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Suraksha.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal syrup for liver protection and digestive strength."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Supports liver health, relieves indigestion, and improves metabolism."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Liver", "Digestion", "Metabolism"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "200 ml",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Triphala Churnam (త్రిఫల చూర్ణం)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/TriphalaChurnam.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Powdered form of Triphala for detox, digestion and constipation relief."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Promotes bowel health, cleanses toxins, and supports immunity."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Digestion", "Detox", "Constipation"],
+    "price": 80,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 80,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Arsha Harini (అర్షహరిని)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/ArshaHarini.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Ayurvedic medicine for piles and related digestive disorders."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Relieves pain, burning sensation and constipation due to piles."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Piles", "Digestion"],
+    "price": 160,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "200 ml",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Chyawanprash (చ్యవనప్రాష్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Chyawanprash.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Traditional Ayurvedic health supplement made with amla and herbs."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Strengthens immunity, boosts energy, improves digestion and respiratory health."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Immunity", "Energy", "Respiratory"],
+    "price": 280,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Jar",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "500 g",
+            "price": 280,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1 kg",
+            "price": 500,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Livron (లివ్రాన్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Livron.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Herbal syrup that supports liver function and improves appetite."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Detoxifies liver, enhances digestion and supports energy levels."
+      }
+    ],
+    "ispublished": true,
+    "category": "1",
+    "labels": ["Liver", "Digestion", "Appetite"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "200 ml",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Ashwagandha (అశ్వగంధ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Ashwagandha.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Powerful adaptogenic herb used in Ayurveda for vitality and stress relief."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Boosts energy, reduces stress, improves strength and supports reproductive health."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Energy", "Stress Relief", "Vitality"],
+    "price": 220,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 220,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Brahmi (బ్రహ్మి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Brahmi.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Ayurvedic herb known for its brain-boosting and memory-enhancing properties."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Improves concentration, memory, reduces anxiety and supports mental clarity."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Memory", "Brain Health", "Calmness"],
+    "price": 180,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Shatavari (శతావరి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Shatavari.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Rejuvenating herb in Ayurveda, especially beneficial for women’s health."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Supports fertility, hormonal balance, lactation and overall vitality."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Women Health", "Fertility", "Vitality"],
+    "price": 240,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 240,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Neem Powder (వేప పొడి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/NeemPowder.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Neem powder for skin care, detox and immunity."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Purifies blood, reduces acne, controls dandruff and supports immunity."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Skin", "Immunity", "Detox"],
+    "price": 100,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 100,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Aloe Vera Gel (గృహ కుంకుమ గెల్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/AloeVeraGel.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural Aloe Vera gel for skin hydration and soothing."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Moisturizes skin, heals burns, reduces pimples and soothes irritation."
+      }
+    ],
+    "ispublished": true,
+    "category": "2",
+    "labels": ["Skin Care", "Moisturizer", "Aloe"],
+    "price": 120,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Jar",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 250,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Tulsi (తులసి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Tulsi.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Holy basil (Tulsi) leaves, used in Ayurveda for immunity and spiritual purity."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Boosts immunity, relieves cold & cough, reduces stress, and purifies the environment."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Immunity", "Respiratory", "Herbal"],
+    "price": 60,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bundle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 60,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Triphala (త్రిఫలా)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/Triphala.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "A blend of three fruits – Amla, Haritaki, and Bibhitaki – for digestion and detox."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Supports digestion, detoxifies the body, improves vision and boosts metabolism."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Digestion", "Detox", "Ayurvedic"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 350,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Moringa (మునగ ఆకులు పొడి)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/Ayurveda/MoringaPowder.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Nutrient-rich Moringa leaf powder, known as a superfood in Ayurveda."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Rich in vitamins and minerals, improves energy, immunity, and reduces inflammation."
+      }
+    ],
+    "ispublished": true,
+    "category": "3",
+    "labels": ["Superfood", "Energy", "Immunity"],
+    "price": 200,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "100 g",
+            "price": 200,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "250 g",
+            "price": 450,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Grow Bags (గ్రో బ్యాగులు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/GrowBags.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Durable HDPE grow bags suitable for vegetables, flowers, and fruits on rooftops and balconies."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Lightweight, reusable, long-lasting, and promotes healthy root growth."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Container Gardening", "Reusable", "Durable"],
+    "price": 80,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Size",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "12x12 inch",
+            "price": 80,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "15x15 inch",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          },
+          {
+            "id": 3,
+            "name": "18x18 inch",
+            "price": 160,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Cocopeat (కొకోపీట్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/Cocopeat.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural growing medium made from coconut husk fibers, excellent for seed starting and soil conditioning."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Retains moisture, improves aeration, eco-friendly alternative to soil."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Soil Substitute", "Moisture Retention", "Eco-friendly"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Block",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "5 kg block",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Organic Compost (సేంద్రియ ఎరువు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/Compost.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Nutrient-rich compost made from natural organic matter, ideal for healthy plant growth."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Improves soil fertility, enhances microbial activity, and boosts yields."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Fertilizer", "Soil Health", "Natural"],
+    "price": 120,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "5 kg",
+            "price": 120,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "10 kg",
+            "price": 220,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Vermicompost (గొంగళి పురుగు ఎరువు)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/Vermicompost.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Organic fertilizer made from earthworms, highly nutritious for plants."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Improves soil structure, enhances root development, and increases yield."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Soil Enricher", "Organic", "Plant Growth"],
+    "price": 150,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Pack",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "5 kg",
+            "price": 150,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "10 kg",
+            "price": 280,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Vegetable Seeds Kit (కూరగాయల విత్తనాల కిట్)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/SeedsKit.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "A starter kit with assorted vegetable seeds for urban gardening."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Easy to grow, suitable for rooftops and balconies, fresh vegetables at home."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Seeds", "Urban Gardening", "Starter Kit"],
+    "price": 250,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Kit",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "10 varieties",
+            "price": 250,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Organic Pest Repellent (సేంద్రియ పురుగు నివారణ)",
+    "imageUrls": [
+      "https://ik.imagekit.io/bzuspdt5r/RoofGarden/PestRepellent.jpg"
+    ],
+    "productdescriptions": [
+      {
+        "id": 1,
+        "title": "Description",
+        "content": "Natural herbal pest repellent safe for edible crops and roof gardens."
+      },
+      {
+        "id": 2,
+        "title": "Benefits",
+        "content": "Keeps away harmful pests, safe for humans and pets, eco-friendly."
+      }
+    ],
+    "ispublished": true,
+    "category": "4",
+    "labels": ["Pest Control", "Organic", "Safe"],
+    "price": 180,
+    "productvariants": [
+      {
+        "id": 1,
+        "name": "Bottle",
+        "ispublished": true,
+        "productvariantoptions": [
+          {
+            "id": 1,
+            "name": "500 ml",
+            "price": 180,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": true
+          },
+          {
+            "id": 2,
+            "name": "1 litre",
+            "price": 320,
+            "ispublished": true,
+            "isoutofstock": false,
+            "isdefault": false
+          }
+        ]
+      }
+    ]
+  }
+]
+
+
