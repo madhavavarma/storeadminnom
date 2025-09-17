@@ -153,21 +153,13 @@ export async function getOrders(): Promise<IOrder[] | null> {
   }
   const { data: userData } = await supabase.auth.getUser();
   const user = userData?.user;
-  if (!user) {
-    return [];
-  }
-  const { data, error } = await supabase
-    .from('orders')
-    .select('*')
-    .eq('userid', user.id)
-    .order('created_at', { ascending: false }); // newest first
-
+  let query = supabase.from('orders').select('*').order('created_at', { ascending: false });
+  
+  const { data, error } = await query;
   if (error) {
     console.error('Error fetching orders:', error);
     return null;
   }
-
-  // data is an array of orders with cartitems as JSON
   return data as IOrder[];
 }
 
