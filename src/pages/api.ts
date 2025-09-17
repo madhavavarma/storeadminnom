@@ -151,8 +151,6 @@ export async function getOrders(): Promise<IOrder[] | null> {
   if(isMock) {
     return [];
   }
-  const { data: userData } = await supabase.auth.getUser();
-  const user = userData?.user;
   let query = supabase.from('orders').select('*').order('created_at', { ascending: false });
   
   const { data, error } = await query;
