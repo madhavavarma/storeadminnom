@@ -155,10 +155,10 @@ export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
   const revenuePercentChange = prevPeriodRevenue === 0
     ? (totalRevenue === 0 ? 0 : 100)
     : ((totalRevenue - prevPeriodRevenue) / prevPeriodRevenue) * 100;
-  // Order status counts (first letter, count)
+  // Order status counts (full string, correct for Confirmed/Cancelled)
   const orderStatusCounts: Record<string, number> = {};
   filteredOrders.forEach(o => {
-    const status = (o.status || '').toString().charAt(0).toUpperCase();
+    const status = (o.status || '').toString();
     if (status) orderStatusCounts[status] = (orderStatusCounts[status] || 0) + 1;
   });
 
@@ -466,13 +466,7 @@ export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
                     className={`transition ${idx % 2 === 0 ? "bg-gray-50 dark:bg-zinc-900" : "bg-white dark:bg-zinc-800"} hover:bg-orange-50 dark:hover:bg-orange-900 group`}
                   >
                     <td className="p-3 font-semibold text-gray-800 dark:text-orange-200 group-hover:text-orange-700 dark:group-hover:text-orange-300">
-                      {status === "P" ? "Pending" :
-                        status === "D" ? "Delivered" :
-                        status === "C" ? "Cancelled" :
-                        status === "F" ? "Failed" :
-                        status === "S" ? "Shipped" :
-                        status === "R" ? "Returned" :
-                        status}
+                      {status || "Unknown"}
                     </td>
                     <td className="p-3 text-orange-700 dark:text-orange-300 font-bold group-hover:text-orange-900 dark:group-hover:text-orange-100">{count}</td>
                   </tr>

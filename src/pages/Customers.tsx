@@ -239,7 +239,7 @@ export default function Customers({ refreshKey }: CustomersProps) {
   };
 
   // Filter customers by search query
-  const filtered = customers.filter(c => c.userid.toLowerCase().includes(query.toLowerCase()));
+  const filtered = customers.filter(c => (c.userid || "").toLowerCase().includes(query.toLowerCase()));
   const totalPages = Math.ceil(filtered.length / perPage);
   const paginated = filtered.slice((currentPage - 1) * perPage, currentPage * perPage);
 
