@@ -486,6 +486,298 @@ export default function Settings({ refreshKey }: SettingsProps) {
               </Button>
             </AccordionContent>
           </AccordionItem>
+          {/* Checkout Sections (dynamic) */}
+          <AccordionItem value="checkoutSections" className="border rounded-lg">
+            <AccordionTrigger className="px-4 py-2 font-semibold bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-200 rounded-t-lg">
+              Checkout Sections
+            </AccordionTrigger>
+            <AccordionContent className="p-4 space-y-6">
+              {(settings?.branding?.checkoutSections || []).map((section, sIdx) => (
+                <div key={section.id} className="border rounded-lg p-4 mb-4 bg-gray-50 dark:bg-zinc-900">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Input
+                      value={section.title}
+                      onChange={e => {
+                        if (!settings) return;
+                        const newSections = [...(settings.branding?.checkoutSections || [])];
+                        newSections[sIdx] = { ...section, title: e.target.value };
+                        setSettings(prev => ({
+                          ...prev!,
+                          branding: { ...prev!.branding, checkoutSections: newSections }
+                        }));
+                      }}
+                      placeholder="Section Title"
+                      className="flex-1"
+                    />
+                    <Button
+                      type="button"
+                      size="icon"
+                      variant="destructive"
+                      onClick={() => {
+                        setSettings(prev => ({
+                          ...prev!,
+                          branding: {
+                            ...prev!.branding,
+                            checkoutSections: (prev!.branding?.checkoutSections || []).filter((_, i) => i !== sIdx)
+                          }
+                        }));
+                      }}
+                    >
+                      <span className="sr-only">Remove Section</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </Button>
+                  </div>
+                  {/* Fields in section */}
+                  {(section.fields || []).map((field, fIdx) => (
+                    <div key={field.id || (field.name + fIdx)} className="grid grid-cols-1 md:grid-cols-8 gap-2 mb-2 items-center">
+                      <Input
+                        value={field.name}
+                        onChange={e => {
+                          if (!settings) return;
+                          const newSections = [...(settings.branding?.checkoutSections || [])];
+                          const newFields = [...(section.fields || [])];
+                          newFields[fIdx] = { ...field, name: e.target.value };
+                          newSections[sIdx] = { ...section, fields: newFields };
+                          setSettings(prev => ({
+                            ...prev!,
+                            branding: { ...prev!.branding, checkoutSections: newSections }
+                          }));
+                        }}
+                        placeholder="Field Name"
+                      />
+                      <Input
+                        value={field.label}
+                        onChange={e => {
+                          if (!settings) return;
+                          const newSections = [...(settings.branding?.checkoutSections || [])];
+                          const newFields = [...(section.fields || [])];
+                          newFields[fIdx] = { ...field, label: e.target.value };
+                          newSections[sIdx] = { ...section, fields: newFields };
+                          setSettings(prev => ({
+                            ...prev!,
+                            branding: { ...prev!.branding, checkoutSections: newSections }
+                          }));
+                        }}
+                        placeholder="Label"
+                      />
+                      <select
+                        value={field.type}
+                        onChange={e => {
+                          if (!settings) return;
+                          const newSections = [...(settings.branding?.checkoutSections || [])];
+                          const newFields = [...(section.fields || [])];
+                          newFields[fIdx] = { ...field, type: e.target.value as any };
+                          newSections[sIdx] = { ...section, fields: newFields };
+                          setSettings(prev => ({
+                            ...prev!,
+                            branding: { ...prev!.branding, checkoutSections: newSections }
+                          }));
+                        }}
+                        className="border rounded p-2"
+                      >
+                        <option value="text">Text</option>
+                        <option value="textarea">Textarea</option>
+                        <option value="radio">Radio</option>
+                        <option value="dropdown">Dropdown</option>
+                        <option value="checkbox">Checkbox</option>
+                      </select>
+                      <Input
+                        value={field.defaultValue || ''}
+                        onChange={e => {
+                          if (!settings) return;
+                          const newSections = [...(settings.branding?.checkoutSections || [])];
+                          const newFields = [...(section.fields || [])];
+                          newFields[fIdx] = { ...field, defaultValue: e.target.value };
+                          newSections[sIdx] = { ...section, fields: newFields };
+                          setSettings(prev => ({
+                            ...prev!,
+                            branding: { ...prev!.branding, checkoutSections: newSections }
+                          }));
+                        }}
+                        placeholder="Default Value"
+                      />
+                      <label className="flex items-center gap-1 text-xs">
+                        <input
+                          type="checkbox"
+                          checked={!!field.disabled}
+                          onChange={e => {
+                            if (!settings) return;
+                            const newSections = [...(settings.branding?.checkoutSections || [])];
+                            const newFields = [...(section.fields || [])];
+                            newFields[fIdx] = { ...field, disabled: e.target.checked };
+                            newSections[sIdx] = { ...section, fields: newFields };
+                            setSettings(prev => ({
+                              ...prev!,
+                              branding: { ...prev!.branding, checkoutSections: newSections }
+                            }));
+                          }}
+                        /> Disabled
+                      </label>
+                      {/* Options for radio/dropdown */}
+                      {(field.type === 'radio' || field.type === 'dropdown') && (
+                        <div className="col-span-2 flex flex-col gap-1">
+                          {(field.options || []).map((opt, oIdx) => (
+                            <div key={oIdx} className="flex gap-1 items-center">
+                              <Input
+                                value={opt.label}
+                                onChange={e => {
+                                  if (!settings) return;
+                                  const newSections = [...(settings.branding?.checkoutSections || [])];
+                                  const newFields = [...(section.fields || [])];
+                                  const newOptions = [...(field.options || [])];
+                                  newOptions[oIdx] = { ...opt, label: e.target.value };
+                                  newFields[fIdx] = { ...field, options: newOptions };
+                                  newSections[sIdx] = { ...section, fields: newFields };
+                                  setSettings(prev => ({
+                                    ...prev!,
+                                    branding: { ...prev!.branding, checkoutSections: newSections }
+                                  }));
+                                }}
+                                placeholder="Option Label"
+                              />
+                              <Input
+                                value={opt.value}
+                                onChange={e => {
+                                  if (!settings) return;
+                                  const newSections = [...(settings.branding?.checkoutSections || [])];
+                                  const newFields = [...(section.fields || [])];
+                                  const newOptions = [...(field.options || [])];
+                                  newOptions[oIdx] = { ...opt, value: e.target.value };
+                                  newFields[fIdx] = { ...field, options: newOptions };
+                                  newSections[sIdx] = { ...section, fields: newFields };
+                                  setSettings(prev => ({
+                                    ...prev!,
+                                    branding: { ...prev!.branding, checkoutSections: newSections }
+                                  }));
+                                }}
+                                placeholder="Option Value"
+                              />
+                              <Button
+                                type="button"
+                                size="icon"
+                                variant="destructive"
+                                onClick={() => {
+                                  if (!settings) return;
+                                  const newSections = [...(settings.branding?.checkoutSections || [])];
+                                  const newFields = [...(section.fields || [])];
+                                  const newOptions = (field.options || []).filter((_, i) => i !== oIdx);
+                                  newFields[fIdx] = { ...field, options: newOptions };
+                                  newSections[sIdx] = { ...section, fields: newFields };
+                                  setSettings(prev => ({
+                                    ...prev!,
+                                    branding: { ...prev!.branding, checkoutSections: newSections }
+                                  }));
+                                }}
+                              >
+                                <span className="sr-only">Remove Option</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                              </Button>
+                            </div>
+                          ))}
+                          <Button
+                            type="button"
+                            size="sm"
+                            className="mt-1"
+                            onClick={() => {
+                              if (!settings) return;
+                              const newSections = [...(settings.branding?.checkoutSections || [])];
+                              const newFields = [...(section.fields || [])];
+                              const newOptions = [...(field.options || []), { label: '', value: '' }];
+                              newFields[fIdx] = { ...field, options: newOptions };
+                              newSections[sIdx] = { ...section, fields: newFields };
+                              setSettings(prev => ({
+                                ...prev!,
+                                branding: { ...prev!.branding, checkoutSections: newSections }
+                              }));
+                            }}
+                          >+ Add Option</Button>
+                        </div>
+                      )}
+                      <label className="flex items-center gap-1 text-xs">
+                        <input
+                          type="checkbox"
+                          checked={!!field.required}
+                          onChange={e => {
+                            if (!settings) return;
+                            const newSections = [...(settings.branding?.checkoutSections || [])];
+                            const newFields = [...(section.fields || [])];
+                            newFields[fIdx] = { ...field, required: e.target.checked };
+                            newSections[sIdx] = { ...section, fields: newFields };
+                            setSettings(prev => ({
+                              ...prev!,
+                              branding: { ...prev!.branding, checkoutSections: newSections }
+                            }));
+                          }}
+                        /> Required
+                      </label>
+                      <Button
+                        type="button"
+                        size="icon"
+                        variant="destructive"
+                        className="ml-2"
+                        onClick={() => {
+                          if (!settings) return;
+                          const newSections = [...(settings.branding?.checkoutSections || [])];
+                          const newFields = (section.fields || []).filter((_, i) => i !== fIdx);
+                          newSections[sIdx] = { ...section, fields: newFields };
+                          setSettings(prev => ({
+                            ...prev!,
+                            branding: { ...prev!.branding, checkoutSections: newSections }
+                          }));
+                        }}
+                      >
+                        <span className="sr-only">Remove Field</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </Button>
+                    </div>
+                  ))}
+                  <Button
+                    type="button"
+                    size="sm"
+                    className="mt-2"
+                    onClick={() => {
+                      if (!settings) return;
+                      const newSections = [...(settings.branding?.checkoutSections || [])];
+                      newSections[sIdx] = {
+                        ...section,
+                        fields: [
+                          ...(section.fields || []),
+                          { id: Math.random().toString(36).slice(2, 10), name: '', label: '', type: 'text', required: false }
+                        ]
+                      };
+                      setSettings(prev => ({
+                        ...prev!,
+                        branding: { ...prev!.branding, checkoutSections: newSections }
+                      }));
+                    }}
+                  >+ Add Field</Button>
+                </div>
+              ))}
+              <Button
+                type="button"
+                size="sm"
+                className="mt-2"
+                onClick={() => {
+                  setSettings(prev => ({
+                    ...prev!,
+                    branding: {
+                      ...prev!.branding,
+                      checkoutSections: [
+                        ...(prev!.branding?.checkoutSections || []),
+                        { id: Math.random().toString(36).slice(2, 10), title: '', fields: [] }
+                      ]
+                    }
+                  }));
+                }}
+              >+ Add Section</Button>
+            </AccordionContent>
+          </AccordionItem>
         </Accordion>
       </Card>
 

@@ -34,18 +34,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { motion } from "framer-motion";
 import {
-  Phone,
-  MapPin,
-  Wallet,
   Trash2,
   ShoppingBag,
   PackageCheck,
   RefreshCcw,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { getAppSettings } from "../api";
 import { toast } from "sonner";
 import type { ICheckout } from "@/interfaces/ICheckout";
 import { ProductActions } from "@/store/ProductSlice";
@@ -104,20 +101,27 @@ export default function OrderSummary({ onClose }: OrderSummaryProps) {
   const totalAmount = cartitems?.reduce((acc, item) => acc + item.totalPrice, 0);
   const dispatch = useDispatch();
   const checkoutData = useSelector((state: IState) => state.Orders.showOrder?.checkoutdata);
-  // All fields should be editable regardless of status
-  const isPending = true;
   const [status, setStatus] = useState(cart?.status || 'Pending');
-  const [formData, setFormData] = useState<ICheckout>(
-    checkoutData || {
-      phone: "",
-      email: "",
-      whatsapp: "",
-      address: "",
-      city: "",
-      pincode: "",
-      paymentMethod: "cod",
-    }
-  );
+  // Allow dynamic fields in formData, but always include ICheckout fields
+  function ensureCheckoutFields(data: any): ICheckout & Record<string, any> {
+    return {
+      phone: data?.phone ?? '',
+      email: data?.email ?? '',
+      whatsapp: data?.whatsapp ?? '',
+      address: data?.address ?? '',
+      city: data?.city ?? '',
+      pincode: data?.pincode ?? '',
+      paymentMethod: data?.paymentMethod ?? 'cod',
+      ...data
+    };
+  }
+
+  const [formData, setFormData] = useState<ICheckout & Record<string, any>>(ensureCheckoutFields(checkoutData));
+
+  // Sync formData with checkoutData when order changes
+  useEffect(() => {
+    setFormData(ensureCheckoutFields(checkoutData));
+  }, [checkoutData]);
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [deleting, setDeleting] = useState(false);
 
@@ -133,26 +137,32 @@ export default function OrderSummary({ onClose }: OrderSummaryProps) {
 
 
 
-  const [sameAsPhone, setSameAsPhone] = useState(false);
-  const [fieldErrors, setFieldErrors] = useState<{ [key: string]: boolean }>({});
 
+  // Dynamic checkout sections from app settings
+  const [checkoutSections, setCheckoutSections] = useState<any[]>([]);
   useEffect(() => {
-    setSameAsPhone(formData.whatsapp === formData.phone && formData.whatsapp !== "");
-  }, [formData]);
+    getAppSettings().then((settings) => {
+      setCheckoutSections(settings?.branding?.checkoutSections || []);
+    });
+  }, []);
 
-  const handleChange = (field: keyof ICheckout, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-    setFieldErrors((prev) => ({ ...prev, [field]: false }));
+  // Add missing state for sameAsPhone
+  const [sameAsPhone, setSameAsPhone] = useState(false);
+
+  // Allow any field name/type
+  const handleChange = (field: string, value: any) => {
+  setFormData((prev: ICheckout & Record<string, any>) => ({ ...prev, [field]: value }));
+
+    // Special logic for whatsapp same as phone
+    if (field === 'phone' && sameAsPhone) {
+  setFormData((prev: ICheckout & Record<string, any>) => ({ ...prev, whatsapp: value }));
+    }
+    if (field === 'whatsapp') {
+      setSameAsPhone(value === formData.phone && value !== '');
+    }
   };
 
-  const handleSameAsPhoneToggle = () => {
-    const newValue = !sameAsPhone;
-    setSameAsPhone(newValue);
-    setFormData((prev) => ({
-      ...prev,
-      whatsapp: newValue ? prev.phone : "",
-    }));
-  };
+
 
   // Manual update handler for Update Order button
   const handleUpdateOrder = async () => {
@@ -496,103 +506,105 @@ export default function OrderSummary({ onClose }: OrderSummaryProps) {
             </motion.div>
           </div>
 
-          {/* Right: Address + Contact */}
+          {/* Right: Dynamic Checkout Sections (Editable) */}
           <div className="space-y-6">
-            <Card>
-              <CardContent className="p-4 space-y-4">
-                <h2 className="text-lg font-semibold flex items-center gap-2">
-                  <Phone className="w-4 h-4" /> Contact
-                </h2>
-                <Input
-                  type="tel"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={(e) => handleChange("phone", e.target.value)}
-                  className={fieldErrors.phone ? "border-red-500" : ""}
-                  disabled={!isPending}
-                />
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  value={formData.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
-                  className={fieldErrors.email ? "border-red-500" : ""}
-                  disabled={!isPending}
-                />
-                <Input
-                  type="text"
-                  placeholder="WhatsApp (Optional)"
-                  value={formData.whatsapp}
-                  onChange={(e) => handleChange("whatsapp", e.target.value)}
-                  disabled={!isPending}
-                />
-                <label className="flex items-center gap-2 text-sm">
-                  <input
-                    type="checkbox"
-                    checked={sameAsPhone}
-                    onChange={handleSameAsPhoneToggle}
-                    disabled={!isPending}
-                  />
-                  Same as phone number
-                </label>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4 space-y-4">
-                <h2 className="text-lg font-semibold flex items-center gap-2">
-                  <MapPin className="w-4 h-4" /> Shipping Address
-                </h2>
-                <Input
-                  placeholder="Full Address"
-                  value={formData.address}
-                  onChange={(e) => handleChange("address", e.target.value)}
-                  className={fieldErrors.address ? "border-red-500" : ""}
-                  disabled={!isPending}
-                />
-                <Input
-                  placeholder="City"
-                  value={formData.city}
-                  onChange={(e) => handleChange("city", e.target.value)}
-                  className={fieldErrors.city ? "border-red-500" : ""}
-                  disabled={!isPending}
-                />
-                <Input
-                  placeholder="Pincode"
-                  value={formData.pincode}
-                  onChange={(e) => handleChange("pincode", e.target.value)}
-                  className={fieldErrors.pincode ? "border-red-500" : ""}
-                  disabled={!isPending}
-                />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4 space-y-4">
-                <h2 className="text-lg font-semibold flex items-center gap-2">
-                  <Wallet className="w-4 h-4" /> Payment Method
-                </h2>
-                <RadioGroup
-                  value={formData.paymentMethod}
-                  onValueChange={(val: any) => handleChange("paymentMethod", val)}
-                  className="space-y-2"
-                  disabled={!isPending}
-                >
-                  <div className="flex items-center gap-2">
-                    <RadioGroupItem value="cod" id="cod" />
-                    <label htmlFor="cod" className="text-sm">
-                      Cash on Delivery
-                    </label>
-                  </div>
-                  <div className="flex items-center gap-2 opacity-50 cursor-not-allowed">
-                    <RadioGroupItem value="upi" id="upi" disabled />
-                    <label htmlFor="upi" className="text-sm">
-                      UPI (Coming Soon)
-                    </label>
-                  </div>
-                </RadioGroup>
-              </CardContent>
-            </Card>
+            {checkoutSections.length > 0 ? (
+              checkoutSections.map((section) => (
+                <Card key={section.id}>
+                  <CardContent className="p-4 space-y-4">
+                    <h2 className="text-lg font-semibold flex items-center gap-2">
+                      {section.title}
+                    </h2>
+                    {section.fields && section.fields.length > 0 ? (
+                      section.fields.map((field: any) => {
+                        const value = formData[field.name] ?? '';
+                        const disabled = !!field.disabled;
+                        switch (field.type) {
+                          case 'text':
+                            return (
+                              <div key={field.id} className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-gray-700 dark:text-gray-200">{field.label}</label>
+                                <Input
+                                  value={value}
+                                  onChange={e => handleChange(field.name as any, e.target.value)}
+                                  placeholder={field.label}
+                                  disabled={disabled}
+                                />
+                              </div>
+                            );
+                          case 'radio':
+                            return (
+                              <div key={field.id} className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">{field.label}</label>
+                                <div className="flex gap-4">
+                                  {(field.options || []).map((opt: any) => (
+                                    <label key={opt.value} className="flex items-center gap-1 text-base">
+                                      <input
+                                        type="radio"
+                                        name={field.name}
+                                        value={opt.value}
+                                        checked={value === opt.value}
+                                        onChange={() => handleChange(field.name as any, opt.value)}
+                                        disabled={disabled || opt.disabled}
+                                      />
+                                      {opt.label}
+                                    </label>
+                                  ))}
+                                </div>
+                              </div>
+                            );
+                          case 'dropdown':
+                            return (
+                              <div key={field.id} className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">{field.label}</label>
+                                <select
+                                  className="border rounded px-2 py-1 text-base bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100"
+                                  value={value}
+                                  onChange={e => handleChange(field.name as any, e.target.value)}
+                                  disabled={disabled}
+                                >
+                                  <option value="">Select</option>
+                                  {(field.options || []).map((opt: any) => (
+                                    <option key={opt.value} value={opt.value} disabled={opt.disabled}>{opt.label}</option>
+                                  ))}
+                                </select>
+                              </div>
+                            );
+                          case 'checkbox':
+                            return (
+                              <div key={field.id} className="flex items-center gap-2">
+                                <input
+                                  type="checkbox"
+                                  checked={!!value}
+                                  onChange={e => handleChange(field.name as any, e.target.checked)}
+                                  disabled={disabled}
+                                />
+                                <label className="text-sm font-medium text-gray-700 dark:text-gray-200">{field.label}</label>
+                              </div>
+                            );
+                          default:
+                            return (
+                              <div key={field.id} className="flex flex-col gap-1">
+                                <label className="text-sm font-medium text-gray-700 dark:text-gray-200">{field.label}</label>
+                                <Input
+                                  value={value}
+                                  onChange={e => handleChange(field.name as any, e.target.value)}
+                                  placeholder={field.label}
+                                  disabled={disabled}
+                                />
+                              </div>
+                            );
+                        }
+                      })
+                    ) : (
+                      <span className="text-gray-400">No fields</span>
+                    )}
+                  </CardContent>
+                </Card>
+              ))
+            ) : (
+              <span className="text-gray-400">No checkout sections defined in settings.</span>
+            )}
           </div>
         </div>
       </div>
