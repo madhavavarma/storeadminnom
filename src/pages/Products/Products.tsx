@@ -45,6 +45,7 @@ export default function Products() {
         ispublished: data.ispublished,
         discount: data.discount,
         tax: data.tax,
+  shortdescription: data.shortdescription ?? null,
       }).eq("id", data.id);
   
       // Remove and re-insert images
@@ -185,6 +186,7 @@ export default function Products() {
       ispublished: data.ispublished,
       discount: data.discount,
       tax: data.tax,
+  shortdescription: data.shortdescription ?? null,
     }).select().single();
     if (error) {
       alert("Error adding product: " + error.message);

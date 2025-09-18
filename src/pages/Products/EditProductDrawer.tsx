@@ -27,6 +27,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
   const [descriptions, setDescriptions] = useState<IDescription[]>(product.productdescriptions || []);
   const [categories, setCategories] = useState<ICategory[]>([]);
   const [variants, setVariants] = useState<IVariant[]>(product.productvariants || []);
+  const [shortdescription, setShortdescription] = useState(product.shortdescription || "");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
     setIsPublished(product.ispublished ?? true);
     setDescriptions(product.productdescriptions || []);
     setVariants(product.productvariants || []);
+  setShortdescription(product.shortdescription || "");
   }, [product]);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -127,6 +129,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
     onSave({
       id: product.id,
       name,
+  shortdescription: shortdescription || null,
       price: Number(price),
       category,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
@@ -171,7 +174,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
           </div>
         </div>
         {/* Scrollable Content */}
-        <div className="flex-1 overflow-y-auto px-6 py-6">
+        <div className="flex-systesystem 1 overflow-y-auto px-6 py-6">
           <form id="product-edit-form" onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-1">Product Name</label>
@@ -183,6 +186,8 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
             />
           </div>
           <div>
+          </div>
+          <div>
             <label className="block text-sm font-medium mb-1">Price</label>
             <Input
               value={price}
@@ -190,6 +195,15 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
               required
               type="number"
               placeholder="Price"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Short Description</label>
+            <Input
+              value={shortdescription}
+              onChange={(e) => setShortdescription(e.target.value)}
+              placeholder="Short description (optional)"
+              maxLength={200}
             />
           </div>
           <div>

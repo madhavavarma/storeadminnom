@@ -57,6 +57,7 @@ export const getProducts = async (): Promise<IProduct[]> => {
   // 🛠️ Map productImages into a simple array of urls
   const mapped: IProduct[] = (data || []).map((product: any) => ({
     ...product,
+  shortdescription: product.shortdescription ?? null,
     image: product.productimages && product.productimages.length > 0
       ? product.productimages[0].url
       : undefined,

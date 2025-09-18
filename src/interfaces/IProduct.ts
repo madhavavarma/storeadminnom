@@ -1,6 +1,7 @@
 export interface IProduct {
     id?: number,
     name: string,
+    shortdescription?: string | null,
     image?: string,
     imageUrls: string[],
     productdescriptions: IDescription[],

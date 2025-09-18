@@ -22,6 +22,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
     }
   }, [open]);
   const [name, setName] = useState("");
+  const [shortdescription, setShortdescription] = useState<string>("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
   const [labels, setLabels] = useState("");
@@ -64,10 +65,8 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
       imageUrls = [imageUrl];
     }
     await onAdd({
-      // Log just before calling onAdd
-      // (already logged above, but this is a checkpoint)
-      // console.log("[AddProductDrawer] onAdd called");
       name,
+  shortdescription: shortdescription || null,
       price: Number(price),
       category,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
@@ -78,7 +77,8 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
       productvariants: variants,
     });
     setLoading(false);
-    setName("");
+  setName("");
+  setShortdescription("");
     setPrice("");
     setCategory("");
     setLabels("");
@@ -159,6 +159,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   return (
     <Sheet open={open} onOpenChange={onClose}>
       <SheetContent side="right" className="p-0 w-full max-w-md flex flex-col h-full bg-white dark:bg-zinc-900">
+        {/* Removed duplicate short description input at top */}
         {/* Sticky Header with Close */}
         <div className="sticky top-0 z-20 bg-white dark:bg-zinc-900 border-b dark:border-zinc-800 flex items-center justify-between px-4 py-3">
           <h2 className="text-lg font-bold text-green-700 dark:text-green-200">Add New Product</h2>
@@ -185,6 +186,15 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
               onChange={(e) => setName(e.target.value)}
               required
               placeholder="Product name"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Short Description</label>
+            <Input
+              value={shortdescription}
+              onChange={(e) => setShortdescription(e.target.value)}
+              placeholder="Short description (optional)"
+              maxLength={200}
             />
           </div>
           <div>
