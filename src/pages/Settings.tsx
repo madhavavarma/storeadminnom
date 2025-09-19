@@ -530,8 +530,8 @@ export default function Settings({ refreshKey }: SettingsProps) {
                     </Button>
                   </div>
                   {/* Fields in section */}
-                  {(section.fields || []).map((field, fIdx) => (
-                    <div key={field.id || (field.name + fIdx)} className="grid grid-cols-1 md:grid-cols-8 gap-2 mb-2 items-center">
+                  {(section.fields || []).map((field: any, fIdx: number) => (
+                    <div key={field.id || (field.name + fIdx)} className="grid grid-cols-1 md:grid-cols-10 gap-2 mb-2 items-center">
                       <Input
                         value={field.name}
                         onChange={e => {
@@ -592,12 +592,45 @@ export default function Settings({ refreshKey }: SettingsProps) {
                           newFields[fIdx] = { ...field, defaultValue: e.target.value };
                           newSections[sIdx] = { ...section, fields: newFields };
                           setSettings(prev => ({
-                            ...prev!,
+                            ...prev!, 
                             branding: { ...prev!.branding, checkoutSections: newSections }
                           }));
                         }}
                         placeholder="Default Value"
                       />
+                      {/* Regex and error message for text/textarea */}
+                      {(field.type === 'text' || field.type === 'textarea') && <>
+                        <Input
+                          value={field.regex || ''}
+                          onChange={e => {
+                            if (!settings) return;
+                            const newSections = [...(settings.branding?.checkoutSections || [])];
+                            const newFields = [...(section.fields || [])];
+                            newFields[fIdx] = { ...field, regex: e.target.value };
+                            newSections[sIdx] = { ...section, fields: newFields };
+                            setSettings(prev => ({
+                              ...prev!,
+                              branding: { ...prev!.branding, checkoutSections: newSections }
+                            }));
+                          }}
+                          placeholder="Regex (optional)"
+                        />
+                        <Input
+                          value={field.regexError || ''}
+                          onChange={e => {
+                            if (!settings) return;
+                            const newSections = [...(settings.branding?.checkoutSections || [])];
+                            const newFields = [...(section.fields || [])];
+                            newFields[fIdx] = { ...field, regexError: e.target.value };
+                            newSections[sIdx] = { ...section, fields: newFields };
+                            setSettings(prev => ({
+                              ...prev!,
+                              branding: { ...prev!.branding, checkoutSections: newSections }
+                            }));
+                          }}
+                          placeholder="Regex Error Message (optional)"
+                        />
+                      </>}
                       <label className="flex items-center gap-1 text-xs">
                         <input
                           type="checkbox"
@@ -618,7 +651,7 @@ export default function Settings({ refreshKey }: SettingsProps) {
                       {/* Options for radio/dropdown */}
                       {(field.type === 'radio' || field.type === 'dropdown') && (
                         <div className="col-span-2 flex flex-col gap-1">
-                          {(field.options || []).map((opt, oIdx) => (
+                          {(field.options || []).map((opt: any, oIdx: number) => (
                             <div key={oIdx} className="flex gap-1 items-center">
                               <Input
                                 value={opt.label}
@@ -662,7 +695,7 @@ export default function Settings({ refreshKey }: SettingsProps) {
                                   if (!settings) return;
                                   const newSections = [...(settings.branding?.checkoutSections || [])];
                                   const newFields = [...(section.fields || [])];
-                                  const newOptions = (field.options || []).filter((_, i) => i !== oIdx);
+                                  const newOptions = (field.options || []).filter((_: any, i: number) => i !== oIdx);
                                   newFields[fIdx] = { ...field, options: newOptions };
                                   newSections[sIdx] = { ...section, fields: newFields };
                                   setSettings(prev => ({

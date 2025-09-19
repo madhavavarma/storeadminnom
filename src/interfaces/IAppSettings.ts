@@ -23,11 +23,14 @@ export interface IAppSettings {
         id: string;
         name: string;
         label: string;
-        type: 'text' | 'textarea' | 'radio' | 'dropdown' | 'checkbox';
-        required?: boolean;
-        defaultValue?: string;
-        disabled?: boolean;
-        options?: Array<{ label: string; value: string; disabled?: boolean }>;
+  type: 'text' | 'textarea' | 'radio' | 'dropdown' | 'checkbox';
+  required?: boolean;
+  defaultValue?: string;
+  disabled?: boolean;
+  // For text/textarea fields only
+  regex?: string;
+  errorMessage?: string;
+  options?: Array<{ label: string; value: string; disabled?: boolean }>;
       }>;
     }>;
   };
