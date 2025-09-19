@@ -105,3 +105,5 @@ ON storage.objects
 FOR DELETE
 TO authenticated
 USING (bucket_id = 'storeadmin');
+
+ALTER TABLE products ADD COLUMN shortdescription text NULL;

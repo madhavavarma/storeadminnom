@@ -7,7 +7,8 @@ export interface IProduct {
     productdescriptions: IDescription[],
 
     ispublished?: boolean,
-    category: string,
+    category?: string, // optional for migration
+    categoryid?: string | number | null, // allow uuid or int, nullable for migration
     labels: string[],
     
     price: number,

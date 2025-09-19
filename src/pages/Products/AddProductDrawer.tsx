@@ -24,7 +24,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   const [name, setName] = useState("");
   const [shortdescription, setShortdescription] = useState<string>("");
   const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("");
+  const [categoryid, setCategoryId] = useState<string>("");
   const [labels, setLabels] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
@@ -41,7 +41,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    console.log("[AddProductDrawer] Submit attempt", { name, price, category, labels, selectedFiles, imageUrl, isPublished, variants, descriptions });
+  console.log("[AddProductDrawer] Submit attempt", { name, price, categoryid, labels, selectedFiles, imageUrl, isPublished, variants, descriptions });
     e.preventDefault();
   setLoading(true);
     let imageUrls: string[] = [];
@@ -66,9 +66,9 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
     }
     await onAdd({
       name,
-  shortdescription: shortdescription || null,
+      shortdescription: shortdescription || null,
       price: Number(price),
-      category,
+      categoryid,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
       image: imageUrls[0],
       imageUrls,
@@ -80,7 +80,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   setName("");
   setShortdescription("");
     setPrice("");
-    setCategory("");
+    setCategoryId("");
     setLabels("");
     setImageUrl("");
     setSelectedFiles([]);
@@ -210,23 +210,23 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
           <div>
             <label className="block text-sm font-medium mb-1">Category</label>
             <div className="flex items-center gap-2 mb-2">
-              {category && categories.find(cat => cat.name === category) && (
+              {categoryid && categories.find(cat => String(cat.id) === categoryid) && (
                 <img
-                  src={categories.find(cat => cat.name === category)?.image_url}
-                  alt={category}
+                  src={categories.find(cat => String(cat.id) === categoryid)?.image_url}
+                  alt={categories.find(cat => String(cat.id) === categoryid)?.name}
                   className="h-6 w-6 rounded-full object-cover"
                 />
               )}
               <select
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
+                value={categoryid}
+                onChange={(e) => setCategoryId(e.target.value)}
                 required
                 className="block w-full border rounded p-2 appearance-none"
                 style={{ WebkitAppearance: 'none', MozAppearance: 'none' }}
               >
                 <option value="" disabled>Select category</option>
                 {categories.map(cat => (
-                  <option key={cat.id} value={cat.name}>{cat.name}</option>
+                  <option key={cat.id} value={String(cat.id)}>{cat.name}</option>
                 ))}
               </select>
             </div>

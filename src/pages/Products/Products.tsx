@@ -40,12 +40,12 @@ export default function Products() {
       await supabase.from("products").update({
         name: data.name,
         price: data.price,
-        category: data.category,
+        categoryid: data.categoryid,
         labels: data.labels,
         ispublished: data.ispublished,
         discount: data.discount,
         tax: data.tax,
-  shortdescription: data.shortdescription ?? null,
+        shortdescription: data.shortdescription ?? null,
       }).eq("id", data.id);
   
       // Remove and re-insert images
@@ -181,12 +181,12 @@ export default function Products() {
     const { data: inserted, error } = await supabase.from("products").insert({
       name: data.name,
       price: data.price,
-      category: data.category,
+      categoryid: data.categoryid,
       labels: data.labels,
       ispublished: data.ispublished,
       discount: data.discount,
       tax: data.tax,
-  shortdescription: data.shortdescription ?? null,
+      shortdescription: data.shortdescription ?? null,
     }).select().single();
     if (error) {
       alert("Error adding product: " + error.message);

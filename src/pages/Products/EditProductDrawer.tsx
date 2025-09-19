@@ -18,7 +18,7 @@ interface EditProductDrawerProps {
 export default function EditProductDrawer({ open, onClose, product, onSave, onDelete }: EditProductDrawerProps) {
   const [name, setName] = useState(product.name || "");
   const [price, setPrice] = useState(product.price?.toString() || "");
-  const [category, setCategory] = useState(product.category || "");
+  const [categoryid, setCategoryId] = useState(product.categoryid ? String(product.categoryid) : "");
   const [labels, setLabels] = useState((product.labels || []).join(", "));
   const [imageUrl, setImageUrl] = useState(product.image || "");
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
@@ -38,7 +38,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
   useEffect(() => {
     setName(product.name || "");
     setPrice(product.price?.toString() || "");
-    setCategory(product.category || "");
+  setCategoryId(product.categoryid ? String(product.categoryid) : "");
     setLabels((product.labels || []).join(", "));
     setImageUrl(product.image || "");
     setIsPublished(product.ispublished ?? true);
@@ -129,9 +129,9 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
     onSave({
       id: product.id,
       name,
-  shortdescription: shortdescription || null,
+      shortdescription: shortdescription || null,
       price: Number(price),
-      category,
+      categoryid,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
       image: imageUrls[0],
       imageUrls,
@@ -209,23 +209,23 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
           <div>
             <label className="block text-sm font-medium mb-1">Category</label>
             <div className="flex items-center gap-2 mb-2">
-              {category && categories.find(cat => cat.name === category) && (
+              {categoryid && categories.find(cat => String(cat.id) === categoryid) && (
                 <img
-                  src={categories.find(cat => cat.name === category)?.image_url}
-                  alt={category}
+                  src={categories.find(cat => String(cat.id) === categoryid)?.image_url}
+                  alt={categories.find(cat => String(cat.id) === categoryid)?.name}
                   className="h-6 w-6 rounded-full object-cover"
                 />
               )}
               <select
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
+                value={categoryid}
+                onChange={(e) => setCategoryId(e.target.value)}
                 required
                 className="block w-full border rounded p-2 appearance-none"
                 style={{ WebkitAppearance: 'none', MozAppearance: 'none' }}
               >
                 <option value="" disabled>Select category</option>
                 {categories.map(cat => (
-                  <option key={cat.id} value={cat.name}>{cat.name}</option>
+                  <option key={cat.id} value={String(cat.id)}>{cat.name}</option>
                 ))}
               </select>
             </div>
