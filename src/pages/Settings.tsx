@@ -747,6 +747,23 @@ export default function Settings({ refreshKey }: SettingsProps) {
                           }}
                         /> Required
                       </label>
+                      <label className="flex items-center gap-1 text-xs">
+                        <input
+                          type="checkbox"
+                          checked={!!field.showOnOrders}
+                          onChange={e => {
+                            if (!settings) return;
+                            const newSections = [...(settings.branding?.checkoutSections || [])];
+                            const newFields = [...(section.fields || [])];
+                            newFields[fIdx] = { ...field, showOnOrders: e.target.checked };
+                            newSections[sIdx] = { ...section, fields: newFields };
+                            setSettings(prev => ({
+                              ...prev!,
+                              branding: { ...prev!.branding, checkoutSections: newSections }
+                            }));
+                          }}
+                        /> Show on Orders
+                      </label>
                       <Button
                         type="button"
                         size="icon"

@@ -30,6 +30,8 @@ export interface IAppSettings {
   // For text/textarea fields only
   regex?: string;
   errorMessage?: string;
+  // Show this field on Orders as customer
+  showOnOrders?: boolean;
   options?: Array<{ label: string; value: string; disabled?: boolean }>;
       }>;
     }>;

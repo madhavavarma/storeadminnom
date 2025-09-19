@@ -278,7 +278,42 @@ export default function OrderSummary({ onClose }: OrderSummaryProps) {
               </div>
               <div className="flex flex-col min-w-[120px]">
                 <span className="text-xs text-gray-500">Customer</span>
-                <span className="text-sm font-medium text-gray-800 dark:text-gray-200">{cart?.checkoutdata?.phone || cart?.checkoutdata?.email || '--'}</span>
+                <span className="text-sm font-medium text-gray-800 dark:text-gray-200">
+                  {/* Customer display logic using showOnOrders fields from branding config */}
+                  {(() => {
+                    const [customerDisplay, setCustomerDisplay] = useState<string>("--");
+                    const [branding, setBranding] = useState<any>(null);
+                    useEffect(() => {
+                      getAppSettings().then((settings) => {
+                        setBranding(settings?.branding || null);
+                      });
+                    }, []);
+                    useEffect(() => {
+                      if (!branding) return;
+                      const checkoutSections = branding.checkoutSections || [];
+                      const showOnOrdersFields = checkoutSections.flatMap((section: any) =>
+                        (section.fields || []).filter((f: any) => f.showOnOrders)
+                      );
+                      const values = showOnOrdersFields
+                        .map((f: any) => cart?.checkoutdata?.[f.name])
+                        .filter((v: any) => v && String(v).trim() !== "");
+                      if (values.length > 0) {
+                        setCustomerDisplay(values.join(" | "));
+                        return;
+                      }
+                      if (cart?.checkoutdata?.phone) {
+                        setCustomerDisplay(cart.checkoutdata.phone);
+                        return;
+                      }
+                      if (cart?.checkoutdata?.email) {
+                        setCustomerDisplay(cart.checkoutdata.email);
+                        return;
+                      }
+                      setCustomerDisplay("Unknown");
+                    }, [branding, cart]);
+                    return customerDisplay;
+                  })()}
+                </span>
               </div>
               <div className="flex flex-col min-w-[120px]">
                 <span className="text-xs text-gray-500">Payment</span>

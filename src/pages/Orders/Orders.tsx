@@ -5,7 +5,7 @@ import { useOrdersRealtime } from "@/hooks/useOrdersRealtime"
 import { useDispatch } from "react-redux"
 import { OrdersActions, OrderStatus } from "@/store/OrdersSlice"
 import OrderSummary from "./OrderDrawer"
-import { updateOrder, getOrders } from "../api"
+import { updateOrder, getOrders, getAppSettings } from "../api"
 import {
   ChevronLeft,
   ChevronRight,
@@ -66,6 +66,7 @@ export default function Orders({ refreshKey }: { refreshKey?: number }) {
   const location = useLocation();
   const [orders, setOrders] = useState<OrderRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [branding, setBranding] = useState<any>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const dispatch = useDispatch();
@@ -111,66 +112,98 @@ export default function Orders({ refreshKey }: { refreshKey?: number }) {
     return () => window.removeEventListener("clearOrders", clear);
   }, []);
 
-  const fetchOrders = useCallback(() => {
+  const fetchOrders = useCallback(async () => {
     setLoading(true);
-    supabase.auth.getUser().then(({ data }) => {
-      if (data?.user) {
-        setIsLoggedIn(true);
-        // Date filtering logic
-        let from = null, to = null;
-        const now = new Date();
-        if (dateRange.value === "today") {
-          from = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-          to = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-        } else if (dateRange.value === "week") {
-          const day = now.getDay();
-          from = new Date(now.getFullYear(), now.getMonth(), now.getDate() - day);
-          to = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-        } else if (dateRange.value === "month") {
-          from = new Date(now.getFullYear(), now.getMonth(), 1);
-          to = new Date(now.getFullYear(), now.getMonth() + 1, 1);
-        } else if (dateRange.value === "year") {
-          from = new Date(now.getFullYear(), 0, 1);
-          to = new Date(now.getFullYear() + 1, 0, 1);
-        } else if (dateRange.value === "custom" && dateRange.start && dateRange.end) {
-          from = new Date(dateRange.start);
-          to = new Date(dateRange.end);
-          to.setDate(to.getDate() + 1); // include end date
+    const { data } = await supabase.auth.getUser();
+    if (!data?.user) {
+      setIsLoggedIn(false);
+      setOrders([]);
+      setLoading(false);
+      return;
+    }
+    setIsLoggedIn(true);
+    // Fetch branding config using getAppSettings
+    let brandingConfig = null;
+    try {
+      const appSettings = await getAppSettings();
+      brandingConfig = appSettings?.branding || null;
+      setBranding(brandingConfig);
+    } catch (err) {
+      console.error('[Orders] Failed to fetch branding config', err);
+      setBranding(null);
+    }
+    // Date filtering logic
+    let from = null, to = null;
+    const now = new Date();
+    if (dateRange.value === "today") {
+      from = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      to = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    } else if (dateRange.value === "week") {
+      const day = now.getDay();
+      from = new Date(now.getFullYear(), now.getMonth(), now.getDate() - day);
+      to = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    } else if (dateRange.value === "month") {
+      from = new Date(now.getFullYear(), now.getMonth(), 1);
+      to = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+    } else if (dateRange.value === "year") {
+      from = new Date(now.getFullYear(), 0, 1);
+      to = new Date(now.getFullYear() + 1, 0, 1);
+    } else if (dateRange.value === "custom" && dateRange.start && dateRange.end) {
+      from = new Date(dateRange.start);
+      to = new Date(dateRange.end);
+      to.setDate(to.getDate() + 1); // include end date
+    }
+    getOrders().then((ordersData) => {
+      if (ordersData) {
+        let filtered = ordersData;
+        if (from && to) {
+          filtered = ordersData.filter((order: any) => {
+            const created = new Date(order.created_at || order.createdAt);
+            return created >= from && created < to;
+          });
         }
-        getOrders().then((ordersData) => {
-          if (ordersData) {
-            let filtered = ordersData;
-            if (from && to) {
-              filtered = ordersData.filter((order: any) => {
-                const created = new Date(order.created_at || order.createdAt);
-                return created >= from && created < to;
-              });
-            }
-            setOrders(
-              filtered.map((order: any) => ({
-                id: order.id,
-                createdAt: order.created_at || order.createdAt || "",
-                customer:
-                  order.customer ||
-                  order.checkoutdata?.name ||
-                  order.checkoutdata?.phone ||
-                  "Unknown",
-                total: order.totalprice ? `\u20b9${order.totalprice}` : "",
-                paymentStatus: order.paymentStatus || order.checkoutdata?.paymentStatus || "Unpaid",
-                items: order.cartitems ? order.cartitems.length : order.items || 0,
-                deliveryNumber: order.deliveryNumber,
-                orderStatus: order.status || order.orderStatus || "",
-                raw: order,
-              }))
-            );
-          }
-          setLoading(false);
-        });
-      } else {
-        setIsLoggedIn(false);
-        setOrders([]);
-        setLoading(false);
+        setOrders(
+          filtered.map((order: any) => ({
+            id: order.id,
+            createdAt: order.created_at || order.createdAt || "",
+            customer: (() => {
+              try {
+                const checkoutSections = brandingConfig?.checkoutSections || [];
+                const showOnOrdersFields = checkoutSections.flatMap((section: any) =>
+                  (section.fields || []).filter((f: any) => f.showOnOrders)
+                );
+                const values = showOnOrdersFields
+                  .map((f: any) => order.checkoutdata?.[f.name])
+                  .filter((v: any) => v && String(v).trim() !== "");
+                if (values.length > 0) {
+                  console.log("[Orders] Customer fields (showOnOrders):", values, order.checkoutdata, showOnOrdersFields.map((f: any) => f.name));
+                  return values.join(" | ");
+                }
+                if (order.checkoutdata?.phone) {
+                  console.log("[Orders] Fallback to phone", order.checkoutdata.phone, order.checkoutdata);
+                  return order.checkoutdata.phone;
+                }
+                if (order.checkoutdata?.email) {
+                  console.log("[Orders] Fallback to email", order.checkoutdata.email, order.checkoutdata);
+                  return order.checkoutdata.email;
+                }
+                console.log("[Orders] Fallback to Unknown", order.checkoutdata);
+                return "Unknown";
+              } catch (err) {
+                console.error("[Orders] Error in customer display logic", err, order.checkoutdata);
+                return "Unknown";
+              }
+            })(),
+            total: order.totalprice ? `\u20b9${order.totalprice}` : "",
+            paymentStatus: order.paymentStatus || order.checkoutdata?.paymentStatus || "Unpaid",
+            items: order.cartitems ? order.cartitems.length : order.items || 0,
+            deliveryNumber: order.deliveryNumber,
+            orderStatus: order.status || order.orderStatus || "",
+            raw: order,
+          }))
+        );
       }
+      setLoading(false);
     });
   }, [dateRange, refreshKey]);
 
