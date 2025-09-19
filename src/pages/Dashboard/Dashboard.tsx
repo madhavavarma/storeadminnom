@@ -16,9 +16,15 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ShoppingBag, Tag, ShoppingCart, DollarSign } from "lucide-react";
-import { getCategories, getOrders, getProducts } from "../api";
+import { getCategories, getOrders, getProducts, getAppSettings } from "../api";
 
 export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
+  const [branding, setBranding] = useState<any>(null);
+  useEffect(() => {
+    getAppSettings().then((settings) => {
+      setBranding(settings?.branding || null);
+    });
+  }, []);
   const [categories, setCategories] = useState<ICategory[]>([]);
   const [products, setProducts] = useState<IProduct[]>([]);
   const [orders, setOrders] = useState<IOrder[]>([]);
@@ -213,14 +219,32 @@ export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
     orders: chartData[i],
   }));
 
-  // Compute user order counts
+  // Compute user order counts using showOnOrders fields from branding config
   const userOrderMap: Record<string, { name: string; count: number }> = {};
   filteredOrders.forEach((order) => {
-    const name = order.checkoutdata?.phone || order.id || "Unknown";
-    if (!userOrderMap[name]) {
-      userOrderMap[name] = { name, count: 0 };
+    let displayName = "Unknown";
+    if (branding) {
+      const checkoutSections = branding.checkoutSections || [];
+      const showOnOrdersFields = checkoutSections.flatMap((section: any) =>
+        (section.fields || []).filter((f: any) => f.showOnOrders)
+      );
+      const values = showOnOrdersFields
+        .map((f: any) => order.checkoutdata?.[f.name])
+        .filter((v: any) => v && String(v).trim() !== "");
+      if (values.length > 0) {
+        displayName = values.join(" | ");
+      } else if (order.checkoutdata?.phone) {
+        displayName = order.checkoutdata.phone;
+      } else if (order.checkoutdata?.email) {
+        displayName = order.checkoutdata.email;
+      }
+    } else {
+      displayName = order.checkoutdata?.phone || order.id || "Unknown";
     }
-    userOrderMap[name].count++;
+    if (!userOrderMap[displayName]) {
+      userOrderMap[displayName] = { name: displayName, count: 0 };
+    }
+    userOrderMap[displayName].count++;
   });
   const userOrderList = Object.values(userOrderMap).sort(
     (a, b) => b.count - a.count
