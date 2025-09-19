@@ -2,6 +2,7 @@ export interface IProduct {
     id?: number,
     name: string,
     shortdescription?: string | null,
+    deliverydescription?: string | null,
     image?: string,
     imageUrls: string[],
     productdescriptions: IDescription[],

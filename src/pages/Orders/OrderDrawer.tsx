@@ -295,7 +295,7 @@ export default function OrderSummary({ onClose }: OrderSummaryProps) {
                         (section.fields || []).filter((f: any) => f.showOnOrders)
                       );
                       const values = showOnOrdersFields
-                        .map((f: any) => cart?.checkoutdata?.[f.name])
+                        .map((f: any) => (cart?.checkoutdata as Record<string, any>)?.[f.name])
                         .filter((v: any) => v && String(v).trim() !== "");
                       if (values.length > 0) {
                         setCustomerDisplay(values.join(" | "));

@@ -24,6 +24,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
   const [name, setName] = useState("");
   const [shortdescription, setShortdescription] = useState<string>("");
   const [price, setPrice] = useState("");
+  const [deliverydescription, setDeliveryDescription] = useState<string>("");
   const [categoryid, setCategoryId] = useState<string>("");
   const [labels, setLabels] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -67,6 +68,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
     await onAdd({
       name,
       shortdescription: shortdescription || null,
+      deliverydescription: deliverydescription || null,
       price: Number(price),
       categoryid,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
@@ -79,6 +81,7 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
     setLoading(false);
   setName("");
   setShortdescription("");
+  setDeliveryDescription("");
     setPrice("");
     setCategoryId("");
     setLabels("");
@@ -194,6 +197,15 @@ export default function AddProductDrawer({ open, onClose, onAdd }: AddProductDra
               value={shortdescription}
               onChange={(e) => setShortdescription(e.target.value)}
               placeholder="Short description (optional)"
+              maxLength={200}
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Delivery Description</label>
+            <Input
+              value={deliverydescription}
+              onChange={(e) => setDeliveryDescription(e.target.value)}
+              placeholder="Delivery description (optional)"
               maxLength={200}
             />
           </div>

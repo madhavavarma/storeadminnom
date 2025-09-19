@@ -28,6 +28,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
   const [categories, setCategories] = useState<ICategory[]>([]);
   const [variants, setVariants] = useState<IVariant[]>(product.productvariants || []);
   const [shortdescription, setShortdescription] = useState(product.shortdescription || "");
+  const [deliverydescription, setDeliveryDescription] = useState(product.deliverydescription || "");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -45,6 +46,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
     setDescriptions(product.productdescriptions || []);
     setVariants(product.productvariants || []);
   setShortdescription(product.shortdescription || "");
+    setDeliveryDescription(product.deliverydescription || "");
   }, [product]);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -130,6 +132,7 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
       id: product.id,
       name,
       shortdescription: shortdescription || null,
+      deliverydescription: deliverydescription || null,
       price: Number(price),
       categoryid,
       labels: labels.split(",").map(l => l.trim()).filter(Boolean),
@@ -203,6 +206,15 @@ export default function EditProductDrawer({ open, onClose, product, onSave, onDe
               value={shortdescription}
               onChange={(e) => setShortdescription(e.target.value)}
               placeholder="Short description (optional)"
+              maxLength={200}
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1">Delivery Description</label>
+            <Input
+              value={deliverydescription}
+              onChange={(e) => setDeliveryDescription(e.target.value)}
+              placeholder="Delivery description (optional)"
               maxLength={200}
             />
           </div>

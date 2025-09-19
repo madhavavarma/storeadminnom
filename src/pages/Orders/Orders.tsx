@@ -66,7 +66,7 @@ export default function Orders({ refreshKey }: { refreshKey?: number }) {
   const location = useLocation();
   const [orders, setOrders] = useState<OrderRow[]>([]);
   const [loading, setLoading] = useState(true);
-  const [branding, setBranding] = useState<any>(null);
+  // const [branding, setBranding] = useState<any>(null); // removed unused branding state
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const dispatch = useDispatch();
@@ -127,10 +127,10 @@ export default function Orders({ refreshKey }: { refreshKey?: number }) {
     try {
       const appSettings = await getAppSettings();
       brandingConfig = appSettings?.branding || null;
-      setBranding(brandingConfig);
+  // setBranding(brandingConfig); // removed unused branding state
     } catch (err) {
       console.error('[Orders] Failed to fetch branding config', err);
-      setBranding(null);
+  // setBranding(null); // removed unused branding state
     }
     // Date filtering logic
     let from = null, to = null;

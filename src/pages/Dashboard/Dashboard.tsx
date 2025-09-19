@@ -228,8 +228,9 @@ export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
       const showOnOrdersFields = checkoutSections.flatMap((section: any) =>
         (section.fields || []).filter((f: any) => f.showOnOrders)
       );
+      const checkoutdata = order.checkoutdata as Record<string, any>;
       const values = showOnOrdersFields
-        .map((f: any) => order.checkoutdata?.[f.name])
+        .map((f: any) => checkoutdata?.[f.name])
         .filter((v: any) => v && String(v).trim() !== "");
       if (values.length > 0) {
         displayName = values.join(" | ");
