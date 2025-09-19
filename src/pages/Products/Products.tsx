@@ -355,13 +355,13 @@ export default function Products() {
                   <td className="p-3 align-top" onClick={e => e.stopPropagation()}>
                     <div className="flex items-center gap-2">
                       {p.ispublished ? (
-                        <Button size="sm" className="bg-red-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(p.id, false); }}>
-                          <EyeOff size={16} />
+                        <Button size="sm" className="bg-green-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(p.id, false); }}>
+                          <Eye size={16} />
                           <span className="hidden xs:inline">Unpublish</span>
                         </Button>
                       ) : (
-                        <Button size="sm" className="bg-green-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(p.id, true); }}>
-                          <Eye size={16} />
+                        <Button size="sm" className="bg-red-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(p.id, true); }}>
+                          <EyeOff size={16} />
                           <span className="hidden xs:inline">Publish</span>
                         </Button>
                       )}
@@ -394,7 +394,7 @@ export default function Products() {
                   alt={p.name}
                   className="h-12 w-12 object-contain rounded-xl border border-green-100 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-sm"
                 />
-                <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full shadow-sm transition-all ${p.ispublished ? 'bg-green-600 text-white border border-green-600' : 'bg-rose-600 text-white border border-rose-600'}`}>{p.ispublished ? 'Published' : 'Unpublished'}</span>
+                <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full shadow-sm transition-all ${p.ispublished ? 'bg-rose-600 text-white border border-rose-600' : 'bg-green-600 text-white border border-green-600'}`}>{p.ispublished ? 'Published' : 'Unpublished'}</span>
                 {p.ispublished ? (
                   <Button size="sm" className="bg-red-600 text-white flex items-center gap-1 ml-auto" onClick={e => { e.stopPropagation(); setPublished(p.id, false); }}>
                     <EyeOff size={16} />

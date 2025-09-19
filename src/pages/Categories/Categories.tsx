@@ -164,13 +164,13 @@ export default function Categories({ refreshKey: parentRefreshKey }: { refreshKe
                   <td className="p-3 align-top" onClick={e => e.stopPropagation()}>
                     <div className="flex items-center gap-2">
                       {cat.is_published ? (
-                        <Button size="sm" className="bg-red-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(cat, false); }}>
-                          <EyeOff size={16} />
+                        <Button size="sm" className="bg-green-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(cat, false); }}>
+                          <Eye size={16} />
                           <span className="hidden xs:inline">Unpublish</span>
                         </Button>
                       ) : (
-                        <Button size="sm" className="bg-green-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(cat, true); }}>
-                          <Eye size={16} />
+                        <Button size="sm" className="bg-red-600 text-white flex items-center gap-1" onClick={e => { e.stopPropagation(); setPublished(cat, true); }}>
+                          <EyeOff size={16} />
                           <span className="hidden xs:inline">Publish</span>
                         </Button>
                       )}
