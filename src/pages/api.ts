@@ -37,38 +37,37 @@ export const getProducts = async (): Promise<IProduct[]> => {
     return productsMock;
   } else {
     const { data, error } = await supabase
-  .from("products")
-  .select(`
-    *,
-    productimages(*),
-    productdescriptions(*),
-    productvariants(
-      *,
-      productvariantoptions(*)
-    )
-  `)
-  .eq("ispublished", true);
+      .from("products")
+      .select(`
+        *,
+        productimages(*),
+        productdescriptions(*),
+        productvariants(
+          *,
+          productvariantoptions(*)
+        )
+      `);
 
-  if (error) {
-    console.error("Error fetching products:", error);
-    return [];
-  }
+    if (error) {
+      console.error("Error fetching products:", error);
+      return [];
+    }
 
-  // 🛠️ Map productImages into a simple array of urls
-  const mapped: IProduct[] = (data || []).map((product: any) => ({
-    ...product,
-  shortdescription: product.shortdescription ?? null,
-    image: product.productimages && product.productimages.length > 0
-      ? product.productimages[0].url
-      : undefined,
-    imageUrls: product.productimages
-      ? product.productimages.map((img: any) => img.url)
-      : [],
-  }));
+    // 🛠️ Map productImages into a simple array of urls
+    const mapped: IProduct[] = (data || []).map((product: any) => ({
+      ...product,
+      shortdescription: product.shortdescription ?? null,
+      image: product.productimages && product.productimages.length > 0
+        ? product.productimages[0].url
+        : undefined,
+      imageUrls: product.productimages
+        ? product.productimages.map((img: any) => img.url)
+        : [],
+    }));
 
-  // console.log(mapped)
+    // console.log(mapped)
 
-  return mapped;
+    return mapped;
   }
 };
 

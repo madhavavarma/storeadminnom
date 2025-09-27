@@ -122,12 +122,12 @@ export default function Dashboard({ refreshKey }: { refreshKey?: number }) {
  
 
   // Compute counts
-  const totalProducts = filteredProducts.length;
-  const activeProducts = filteredProducts.filter(p => p.ispublished !== false).length;
-  const inactiveProducts = filteredProducts.filter(p => p.ispublished === false).length;
+  const totalProducts = products.length;
+  const activeProducts = products.filter(p => p.ispublished === true).length;
+  const inactiveProducts = products.filter(p => p.ispublished === false).length;
   // Show ALL categories, not filtered
   const totalCategories = categories.length;
-  const activeCategories = categories.filter(c => c.is_published !== false).length;
+  const activeCategories = categories.filter(c => c.is_published === true).length;
   const inactiveCategories = categories.filter(c => c.is_published === false).length;
   const totalOrders = filteredOrders.length;
   // Orders: count only pending for badge
